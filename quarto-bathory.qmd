@@ -1,0 +1,53 @@
+---
+title: "Esta es la tesis de Florcita"
+author: "Florencia Bathory"
+institute: "Universidad Nacional de Luján"
+date: "`2 de julio de 2024"
+format:
+  revealjs: 
+    theme: custom.scss
+    #theme: moon
+    self-contained: true
+    slide-number: c/t
+    logo: images/logo-unlu2.png
+    css: logo.css
+    footer: "[https://github.com/fbathory](https://github.com/fbathory)"
+---
+
+# In the morning
+
+## Getting up {.incremental}
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+- Eat eggs
+
+:::
+
+::: {.column width="60%"}
+- Drink coffee
+:::
+
+::::
+
+
+
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
