@@ -10,7 +10,7 @@ format:
     theme: custom.scss
     smaller: true
     #theme: moon
-    self-contained: true
+    self-contained: false
     slide-number: c/t
     logo: images/logo-unlu2.png
     css: logo.css
