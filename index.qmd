@@ -146,12 +146,11 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 ## Conclusiones
 
-
 # ¡Gracias! {style="text-align: center"}
 
 📧 [florencia.bathory\@gmail.com](mailto:florencia.bathory@gmail.com)
 
-::: {.notes}
+::: notes
 Agradecer primero a los jurados, luego a la gente de la Maestría, luego a mi familia, amigxs, compas de trabajo, a Matías, y por último a mi director
 :::
 
@@ -159,5 +158,3 @@ Agradecer primero a los jurados, luego a la gente de la Maestría, luego a mi fa
 
 ::: refs
 :::
-
-
