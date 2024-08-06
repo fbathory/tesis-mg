@@ -1,6 +1,14 @@
 .reveal .slide-logo {
-  height: 80px !important;
-  width: 80px !important;
+  height: 90px !important;
+  width: 90px !important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+.panel-tabset-tabby a {
+  background-color: #385041;
+}
+
+.reveal h2 {
+  text-align: right;
 }

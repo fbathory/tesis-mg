@@ -1,53 +1,163 @@
 ---
-title: "Esta es la tesis de Florcita"
-author: "Florencia Bathory"
-institute: "Universidad Nacional de Luján"
-date: "`2 de julio de 2024"
+title: "Impacto sociodemográfico de la pandemia de COVID-19 en la esperanza de vida a los 20 años a nivel nacional y provincial en Argentina"
+author: "María Florencia Bathory <br> Universidad de Luján"
+#institute: "Universidad Nacional de Luján"
+lang: es
+date: "20/08/2024"
+date-format: "DD [de] MMMM [de] YYYY"
 format:
   revealjs: 
     theme: custom.scss
+    smaller: true
     #theme: moon
     self-contained: true
     slide-number: c/t
     logo: images/logo-unlu2.png
     css: logo.css
     footer: "[https://github.com/fbathory](https://github.com/fbathory)"
+bibliography: references.bib
+csl: https://www.zotero.org/styles/apa-old-doi-prefix
+# suppress-bibliography: true
 ---
 
-# In the morning
+## Objetivos
 
-## Getting up {.incremental}
+### General
 
-- Turn off alarm
-- Get out of bed
+-   Describir y analizar los diferenciales sociodemográficos y espaciales de la mortalidad durante la pandemia por COVID-19 en la población adulta de 20 años y más.
 
-## Breakfast
+### Específicos
 
-:::: {.columns}
+-   Comparar la mortalidad observada en 2020 y 2021 con la mortalidad previa, de 2019.
 
-::: {.column width="40%"}
+-   Estimar el impacto del COVID-19 en la esperanza de vida a los 20 años por provincia para dos escenarios sin la mortalidad por COVID-19.
 
-- Eat eggs
+-   Cuantificar el impacto diferencial del COVID-19 por grupos de edad y sexo en las provincias.
 
+-   Identificar el impacto de la estructura socioespacial en los cambios de la mortalidad durante la pandemia de COVID-19 entre 2019 y 2021.
+
+<!-- ## Antecedentes -->
+
+<!-- ::: columns -->
+
+<!-- ::: {.column width="33%"} -->
+
+<!-- COVID-19: pérdida de esperanza de vida y descomposición -->
+
+<!-- -   proyecciones de e~x~ según tendencias previas y escenarios contrafácticos -->
+
+<!-- -   descomposición de las diferencias de e~x~ por edad, sexo y causas. Mayor pérdida en los varones. -->
+
+<!-- -   poca contribución de las edades 0-19 en la pérdida de e~0~ -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="33%"} -->
+
+<!-- Diferenciales sociodemográficos en la mortalidad -->
+
+<!-- -   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975] -->
+
+<!-- -   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad. -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="33%"} -->
+
+<!-- Diferenciales sociodemográficos en la mortalidad por COVID-19 -->
+
+<!-- -   En países desarrollados el NSE se asocia a niveles diferentes de riesgo de contraer COVID-19. Esto no ocurre siempre en LatAm [@lozano2023]. -->
+
+<!-- -   Los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor NSE. -->
+
+<!-- ::: -->
+
+<!-- ::: -->
+
+## Antecedentes
+
+::: panel-tabset
+### COVID-19: e~0~ y descomposición
+
+**COVID-19: pérdida de esperanza de vida y descomposición**
+
+-   proyecciones de e~x~ según tendencias previas y escenarios contrafácticos
+-   descomposición de las diferencias de e~x~ por edad, sexo y causas. Mayor pérdida en los varones.
+-   poca contribución de las edades 0-19 en la pérdida de e~0~
+
+### Diferenciales
+
+**Diferenciales sociodemográficos en la mortalidad**
+
+-   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975]
+-   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad.
+
+### Diferenciales COVID-19
+
+**Diferenciales sociodemográficos en la mortalidad por COVID-19**
+
+-   En países desarrollados el NSE se asocia a niveles diferentes de riesgo de contraer COVID-19. Esto no ocurre siempre en LatAm [@lozano2023].
+-   Los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor NSE
 :::
 
-::: {.column width="60%"}
-- Drink coffee
+## Fuentes y métodos
+
+::: panel-tabset
+### Fuentes de datos
+
+**Fuentes de datos**
+
+-   EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS)
+
+-   Proyecciones de población [@institutonacionaldeestadísticaycensos2013]
+
+-   Censos Nacionales de Población, Hogares y Viviendas 2010 y 2022 [@institutonacionaldeestadísticaycensos2012; @institutonacionaldeestadísticaycensos2023]
+
+-   Indicadores Básicos 2021 [@ministeriodesaluddelanación2021]
+
+-   Encuesta Permanente de Hogares (EPH) total urbano 2019 [@institutonacionaldeestadísticaycensos2022]
+
+### Métodos
+
+**Métodos**
+
+-   Estandarización de tasas
+
+-   Tablas de vida
+
+-   Tablas de decrementos múltiples
+
+-   Descomposición con el método de @horiuchi2008
+
+-   Correlación lineal
 :::
 
-::::
+## Resultados (1/x)
+
+### e~20~ 2020 y 2021
+
+## Resultados (2/x)
+
+### Descomposición
+
+## Resultados (3/x)
+
+### Correlaciones lineales
+
+## Conclusiones
 
 
+# ¡Gracias! {style="text-align: center"}
+
+📧 [florencia.bathory\@gmail.com](mailto:florencia.bathory@gmail.com)
+
+::: {.notes}
+Agradecer primero a los jurados, luego a la gente de la Maestría, luego a mi familia, amigxs, compas de trabajo, a Matías, y por último a mi director
+:::
+
+## Referencias bibliográficas
+
+::: refs
+:::
 
 
-# In the evening
-
-## Dinner
-
-- Eat spaghetti
-- Drink wine
-
-## Going to sleep
-
-- Get in bed
-- Count sheep
