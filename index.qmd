@@ -14,7 +14,7 @@ format:
     slide-number: c/t
     logo: images/logo-unlu2.png
     css: logo.css
-    footer: "[https://github.com/fbathory](https://github.com/fbathory)"
+    footer: "[https://fbathory.github.io/tesis-mg](https://fbathory.github.io/tesis-mg)"
 bibliography: references.bib
 csl: https://www.zotero.org/styles/apa-old-doi-prefix
 # suppress-bibliography: true
