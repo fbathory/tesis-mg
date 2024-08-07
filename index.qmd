@@ -3,7 +3,7 @@ title: "Impacto sociodemográfico de la pandemia de COVID-19 en la esperanza de 
 author: "María Florencia Bathory <br> Universidad de Luján"
 #institute: "Universidad Nacional de Luján"
 lang: es
-date: "20/08/2024"
+date: "08/23/2024"
 date-format: "DD [de] MMMM [de] YYYY"
 format:
   revealjs: 
