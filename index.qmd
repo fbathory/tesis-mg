@@ -7,6 +7,8 @@ date: "08/23/2024"
 date-format: "DD [de] MMMM [de] YYYY"
 format:
   revealjs: 
+    touch: false
+    controls: true
     theme: custom.scss
     smaller: true
     #theme: moon
