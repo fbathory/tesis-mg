@@ -22,11 +22,15 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 # suppress-bibliography: true
 ---
 
+## Índice
+
+## Introducción
+
 ## Objetivos
 
 ### General
 
--   Describir y analizar los diferenciales sociodemográficos y espaciales de la mortalidad durante la pandemia por COVID-19 en la población adulta de 20 años y más.
+-   Describir y analizar los diferenciales sociodemográficos y espaciales de la mortalidad durante la pandemia por COVID-19 en la población adulta de 20 años y más en Argentina y sus provincias.
 
 ### Específicos
 
@@ -76,6 +80,18 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 <!-- ::: -->
 
+## Marco conceptual
+
+-   Transición demográfica: envejecimiento
+
+-   Transición en salud: América Latina es la región con mayor heterogeneidad en salud y mortalidad. Heterogeneidad a nivel de diferenciales sociales, tales como condiciones de vida, etc.
+
+-   Impacto del COVID-19: las diferencias en la prevalencia de enfermedades que actúan como factores de riesgo
+
+-   Farmer: reemergencia de enfermedades infecciosas.
+
+-   REVISAR QUÉ SACAR DE ANTECEDENTES Y PONER ACÁ
+
 ## Antecedentes
 
 ::: panel-tabset
@@ -122,7 +138,7 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 ### Métodos
 
 **Métodos**
-
+(incluir ecuaciones)
 -   Estandarización de tasas
 
 -   Tablas de vida
@@ -134,20 +150,36 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 -   Correlación lineal
 :::
 
+::: notes
+Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV.
+Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia. 
+Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
+:::
+
 ## Resultados (1/x)
 
+### TEM - total del país y algunas provincias
+
+## Resultados (2/x)
+
 ### e~20~ 2020 y 2021
+- Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
+- comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
 
 ## Resultados (2/x)
 
 ### Descomposición
+- Rearmar gráficos de grupos veintenales: 20-39, 40-59, 60-79, 80 y más
 
 ## Resultados (3/x)
 
 ### Correlaciones lineales
 
 ## Conclusiones
+- La pérdida de 𝑒20 entre 2019 y 2020 para el total del país es de 0,79 y 1,28 años para mujeres y varones respectivamente. Para mostrar otros resultados en contexto, estas pérdidas son menores a las experimentadas en el mismo período en la 𝑒15 en varios países (Huang et al., 2023) y en la 𝑒0 en varios países europeos (Aburto et al., 2022). Entre 2019 y 2021, las pérdidas de años de 𝑒20 para el total del país son de 2,75 años para las mujeres y 3,19 años para varones. En este mismo período, los países europeos presentan diferencias en su 𝑒0 que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,58 años (Schöley et al., 2022); en el caso de países
+de Latinoamérica, varios tienen pérdidas en la 𝑒0 por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años) (Heuveline, 2022).
 
+- A nivel de las provincias, las diferencias entre 2020 y 2021. En 2021 la e~20~ hubiera sido similar a la observada sin COVID-19 si las tendencias de la mortalidad hubieran permanecido como en la década previa. 
 # ¡Gracias! {style="text-align: center"}
 
 📧 [florencia.bathory\@gmail.com](mailto:florencia.bathory@gmail.com)
