@@ -148,6 +148,19 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 ## Conclusiones
 
+::: {.fragment .fade-in fragment-index=1}
+Causas que tendieron a evitarse
+:::
+
+::: {.fragment .fade-out fragment-index=2}
+![](images/Tasa accidentes.jpg){.r-stretch}
+:::
+
+::: {.fragment .fade-up fragment-index=3}
+A ver este otro punto
+:::
+
+
 # ¡Gracias! {style="text-align: center"}
 
 📧 [florencia.bathory\@gmail.com](mailto:florencia.bathory@gmail.com)
