@@ -1,5 +1,6 @@
 library(tidyverse)
 library(openxlsx)
+library(cowplot)
 
 # Resultados e20 para regraficar por sexo
 e20_escenarios_p <- read.xlsx("data/e20 3 escenarios para presentar.xlsx",sep.names = " ")
