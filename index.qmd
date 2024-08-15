@@ -126,7 +126,7 @@ A medida que aumenta la edad, también aumenta la prevalencia de estas enfermeda
 -   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975]
 
 ::: {.fragment .fade-in}
--   Teoría de las causas fundamentales (TCF) [@link1995]: la posición que ocupan los individuos en la estructura social (asociada a recursos, conocimientos, etc) los pone en *riesgo de riesgos*, por lo que todo factor de riesgo debe ser *contextualizado*. Las *causas fundamentales* persisten como gradientes sociales en la morbimortalidad.
+-   Teoría de las causas fundamentales (TCF) [@link1995]: la posición que ocupan los individuos en la estructura social (asociada a recursos, conocimientos, etc.) los pone en *riesgo de riesgos*, por lo que todo factor de riesgo debe ser *contextualizado*. Las *causas fundamentales* persisten como gradientes sociales en la morbimortalidad.
 :::
 
 ::: {.fragment .fade-in}
@@ -139,9 +139,7 @@ Causa fundamentales: estos distintos aspectos de la posición en la estructura s
 
 ## Marco conceptual: desigualdades sociales en salud (2/2)
 
-::: {.fragment .fade-in}
 -   Como los recursos para afectar la mortalidad están distribuidos desigualmente, mientras más rápido se aborde el tratamiento de una enfermedad, menos tiempo lleva cada etapa de la *historia social* de la enfermedad y más rápidamente se controlan las desigualdades [@clouston2016]
-:::
 
 ::: {.fragment .fade-in}
 -   @farmer2000 propone una *epistemología crítica* de las enfermedades infecciosas emergentes que incluya evaluar factores estructurales como la pobreza y las desigualdades sociales en la pelea contra las enfermedades infecciosas
@@ -151,6 +149,26 @@ Causa fundamentales: estos distintos aspectos de la posición en la estructura s
 Clouston menciona que al estudiar una causa en particular, las desigualdades sociales generan un aumento en la brecha de la mortalidad entre los grupos debido a que los recursos para afectar la mortalidad se encuentran distribuidos desigualmente. Farmer dice que además algunas enfermedades ignoran las divisiones políticas, por lo que las estrategias de los países deben ser coordinadas y debe tenerse en cuenta la situación de cada país (menciona, por ejemplo, la deuda que un país tenga con el FMI ya que debe destinar parte de sus recursos limitados al pago de deuda y no a la salud)
 :::
 
+## Marco conceptual: desigualdad social y territorio
+
+-   Como la vida social no transcurre en el vacío sino en un lugar y momento determinados, la estructura social se refleja en el territorio, en tanto espacio donde la vida social ocurre [@jackson2017].
+
+::: {.fragment .fade-in}
+-   La dinámica en el territorio es, en parte, resultado del desarrollo geográfico histórico desigual. Por lo tanto, condensa en un momento la distribución y asignación desigual de recursos (entonces, de ventajas y desventajas) producto de esa dinámica.
+:::
+
+::: {.fragment .fade-in}
+-   Los hábitos y las trayectorias de los grupos poblacionales que habitan el territorio inciden y son a su vez modificadas por las condiciones dadas en un momento y lugar del territorio. Por lo tanto, las desigualdades **se organizan espacialmente** y convergen en patrones espaciales de desigualdad en fenómenos como la salud y la mortalidad
+:::
+
+::: {.fragment .fade-in}
+-   Estas desigualdades territoriales adquieren especial relevancia en momentos de crisis y catástrofes porque impactan más fuertemente en los sectores desfavorecidos.
+:::
+
+::: notes
+El territorio tiene su dinámica plagada de acción y relaciones sociales entre grupos, comportamientos compartidos, normas, tensiones, luchas y conflictos que, en parte, son resultado del desarrollo geográfico histórico desigual. Las condiciones incluyen la distribución por NSE, la etnia, el nivel de urbanización, los servicios de salud y educación, las políticas del gobierno local y los riesgos ambientales para la salud
+:::
+
 ## Antecedentes
 
 ::: panel-tabset
@@ -158,21 +176,32 @@ Clouston menciona que al estudiar una causa en particular, las desigualdades soc
 
 **COVID-19: pérdida de esperanza de vida y descomposición**
 
--   proyecciones de e~x~ según tendencias previas y escenarios contrafácticos
--   descomposición de las diferencias de e~x~ por edad, sexo y causas. Mayor pérdida en los varones.
--   poca contribución de las edades 0-19 en la pérdida de e~0~
+-   Proyecciones de e~x~ (0, 15, 65) según tendencias previas y escenarios contrafácticos sin COVID-19
+-   Descomposición de las diferencias de e~x~ por edad, sexo y causas:
+    -   mayor pérdida en los varones
+    -   el COVID-19 explica la mayor parte de la pérdida de esperanza de vida
+    -   poca contribución de las edades 0-19 en la pérdida de e~0~
+-   En Argentina, un primer trabajo proyecta la mortalidad según las tendencias de la década previa para 11 provincias y encuentra diferencias que se atribuyeron a desigualdades estructurales.
 
 ### Diferenciales
 
 **Diferenciales sociodemográficos en la mortalidad**
 
--   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad.
+-   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos:
+    -   En Argentina, un estudio realizado para la provincia de Buenos Aires durante la pandemia de gripe A arroja resultados en ese sentido
 
 ### Diferenciales COVID-19
 
 **Diferenciales sociodemográficos en la mortalidad por COVID-19**
 
--   En países desarrollados el NSE se asocia a niveles diferentes de riesgo de contraer COVID-19. Esto no ocurre siempre en LatAm [@lozano2023].
+-   En países desarrollados, indicadores de condiciones de vida se asocian a niveles diferentes de riesgo de contraer COVID-19.
+-   Estudios en la región obtienen que el impacto heterogéneo del COVID-19 se relaciona con las desigualdades preexistentes en salud. Sin embargo, no todos encuentran una mayor mortalidad a nivel territorial en lugares menos desarrollados económicamente o con peores indicadores sociales [@lozano2023].
+-   Para Argentina, hay estudios que relacionan el porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI) y densidad poblacional con la mortalidad por COVID-19 (por ejemplo, [@leveau2022]).
+-   Otros indicadores que han mostrado asociación con la incidencia y/o la mortalidad por COVID-19: hacinamiento, cobertura de salud, tasas de empleo y desempleo, desigualdad de ingresos, acceso al agua potable, la infraestructura hospitalaria, la densidad poblacional, entre otras
+:::
+
+::: notes
+Es curioso mencionar que, en el caso de la densidad poblacional, la relación no es clara para todos los países, ya que para algunos refleja la infraestructura hospitalaria, mientras en otros se relaciona con la propagación del virus y la saturación de los sistemas sanitarios.
 :::
 
 ## Fuentes y métodos
@@ -182,7 +211,7 @@ Clouston menciona que al estudiar una causa en particular, las desigualdades soc
 
 **Fuentes de datos**
 
--   EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS): buena cobertura, vemos la calidad.
+-   EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS).
 
 -   Proyecciones de población [@institutonacionaldeestadísticaycensos2013]
 
@@ -206,6 +235,8 @@ Clouston menciona que al estudiar una causa en particular, las desigualdades soc
 :::
 
 ::: notes
+EEVV: se utilizan 10 años ya que en estudios anteriores se utilizó este mismo margen debido a ciertas fluctuaciones (como en 2016 en algunas provincias) recientes
+
 Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia. Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
 :::
 
@@ -252,7 +283,11 @@ A ver este otro punto
 ## Limitaciones
 
 -   Datos de defunciones: si bien la cobertura es buena, hay aspectos a mejorar en la calidad de la información. Si bien hay estudios de exceso de mortalidad que muestran que éste se explica por el COVID-19, es necesario hacer estudios más detallados que evalúen la calida, muy difíciles de realizar con los datos publicados.
+-   Asimismo, este trabajo se dedicó a diferenciar entre defunciones COVID-19 vs. no COVID-19 y, por lo tanto, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como ser la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México [@gonzalez-perez2023]
 -   Dado el origen de los datos, resulta imposible poder evaluar el rezago de la inscripción de defunciones, por lo que las defunciones de 2021 pueden estar sobreestimadas en algunas provincias. Es importante profundizar en este aspecto solicitando estos datos a la DEIS.
+-   No hemos dado cuenta de las diferencias en las estrategias de cierres y aperturas en los distintos momentos a distintos niveles territoriales.
+-   Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados. Sin embargo, eso plantea la dificultad de utilizar medidas robustas como la esperanza de vida debido a los datos disponibles y la dificultad de proyectar a niveles pequeños de desagregación (especialmente tan lejos de las últimas proyecciones).
+-   Este trabajo no capta el efecto de la vacunación a lo largo de 2021. De ello se desprenden posibles líneas de investigación para profundizar en el conocimiento, tanto del desarrollo de la pandemia como del efecto de la vacunación en la mortalidad.
 
 # ¡Gracias! {style="text-align: center"}
 
