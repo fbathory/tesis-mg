@@ -1,6 +1,6 @@
 ---
 title: "Impacto sociodemográfico de la pandemia de COVID-19 en la esperanza de vida a los 20 años a nivel nacional y provincial en Argentina"
-author: "María Florencia Bathory<br>Dr. Octavio Bramajo<br>Universidad de Luján"
+author: "María Florencia Bathory<br>Director: Dr. Octavio Bramajo<br>Universidad de Luján"
 #institute: "Universidad Nacional de Luján"
 lang: es
 date: "08/23/2024"
@@ -8,6 +8,7 @@ date-format: "DD [de] MMMM [de] YYYY"
 format:
   revealjs: 
     touch: false
+    preview-links: true
     controls: true
     theme: custom.scss
     smaller: true
@@ -18,13 +19,49 @@ format:
     css: logo.css
     footer: "[https://fbathory.github.io/tesis-mg](https://fbathory.github.io/tesis-mg)"
 bibliography: references.bib
-csl: https://www.zotero.org/styles/apa-old-doi-prefix
+csl: https://www.zotero.org/styles/apa
 # suppress-bibliography: true
 ---
 
 ## Índice
 
+-   Introducción
+
+-   Objetivos
+
+-   Marco conceptual
+
+-   Antecedentes
+
+-   Fuentes y métodos
+
+-   Resultados
+
+-   Conclusiones
+
 ## Introducción
+
+La pandemia causada por la enfermedad del COVID-19 es uno de los eventos más relevantes a nivel mundial en los últimos 100 años
+
+::: {.fragment .fade-in}
+Nuevas medidas adoptadas por los gobiernos: limitaciones al movimiento de personas, distanciamiento social, suspensión de actividades, cierre de fronteras.
+:::
+
+::: {.fragment .fade-in}
+La edad y el sexo son determinantes al momento de estudiar la exposición al riesgo de enfermedades y el COVID-19 no es la excepción.
+:::
+
+::: {.fragment .fade-in}
+Estructura por edad más rejuvenecida en los países de América Latina que en los europeos, pero con mayor prevalencia de enfermedades no trasmisibles. <!--# [@frenk1994; @murray2020; @ng2014; @ong2023]  -->
+:::
+
+::: {.fragment .fade-in}
+Otras características sociales estructurales desfavorables hacen a la región particularmente vulnerable ante la pandemia. <!--# [@comisióneconómicaparaaméricalatinayelcaribe2021; @diezroux2021; @nepomuceno2020; @ravallion2014; @verabolaños2000]  -->
+:::
+
+::: {.fragment .fade-in}
+El desarrollo histórico argentino genera diferencias entre las regiones: se reflejan en su estructura demográfica y en variables socioeconómicas y territoriales. Por lo tanto, las provincias están en situaciones heterogéneas al momento de la llegada del COVID-19.
+:::
 
 ## Objetivos
 
@@ -32,6 +69,7 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 -   Describir y analizar los diferenciales sociodemográficos y espaciales de la mortalidad durante la pandemia por COVID-19 en la población adulta de 20 años y más en Argentina y sus provincias.
 
+::: {.fragment .fade-in}
 ### Específicos
 
 -   Comparar la mortalidad observada en 2020 y 2021 con la mortalidad previa, de 2019.
@@ -41,56 +79,77 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 -   Cuantificar el impacto diferencial del COVID-19 por grupos de edad y sexo en las provincias.
 
 -   Identificar el impacto de la estructura socioespacial en los cambios de la mortalidad durante la pandemia de COVID-19 entre 2019 y 2021.
+:::
 
-<!-- ## Antecedentes -->
+## Marco conceptual: transiciones demográfica y epidemiológica
 
-<!-- ::: columns -->
+-   La transición demográfica argentina presenta una trayectoria "atípica" en relación a los lineamientos clásicos del modelo.
 
-<!-- ::: {.column width="33%"} -->
+::: {.fragment .fade-in}
+-   Actualmente, Argentina se encuentra en una etapa avanzada de la transición. El porcentaje de personas de 65 años y más es de 11,8% según datos del CNPHV 2022 .
+:::
 
-<!-- COVID-19: pérdida de esperanza de vida y descomposición -->
+::: {.fragment .fade-in}
+-   América Latina es la región con mayor heterogeneidad en salud y mortalidad. Hay superposición de etapas, "contratransición" y estancamiento. Las desigualdades sociales exacerban las desigualdades en salud y se produce una "polarización epidemiológica".
+:::
 
-<!-- -   proyecciones de e~x~ según tendencias previas y escenarios contrafácticos -->
+::: {.fragment .fade-in}
+-   Argentina tiene los primeros cambios en el perfil epidemiológico en la década de 1930. Para 1950, Argentina ha cubierto buena parte del proceso de transición epidemiológica. Sin embargo, el desarrollo de las provincias es heterogéneo y la salud y la mortalidad se encuentran distribuidas desigualmente
+:::
 
-<!-- -   descomposición de las diferencias de e~x~ por edad, sexo y causas. Mayor pérdida en los varones. -->
+::: notes
+El temprano inicio del proceso transicional en el país, el descenso simultáneo de la mortalidad y la natalidad - no hay explosión demográfica - y el ingreso masivo de inmigrantes europeos que contribuyen al aumento de la población, principalmente en las primeras décadas del siglo XX.
 
-<!-- -   poca contribución de las edades 0-19 en la pérdida de e~0~ -->
+Al interior del país hay heterogeneidad: CABA 17,3%, La Pampa y Santa Fe 12,7% vs. TDF con 6,6%, Santa Cruz y Misiones 7,4% y 8,3%
 
-<!-- ::: -->
+En década de 1930 la mortalidad por enfermedades transmisibles desciende más rápido que la mortalidad general y reduce su importancia relativa
+:::
 
-<!-- ::: {.column width="33%"} -->
+## Marco conceptual: impacto del COVID-19 y desigualdades
 
-<!-- Diferenciales sociodemográficos en la mortalidad -->
+-   Inicialmente, se hace énfasis en la mayor mortalidad masculina del COVID-19, especialmente entre las personas mayores y aquellas con enfermedades preexistentes
 
-<!-- -   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975] -->
+::: {.fragment .fade-in}
+-   Impacto del COVID-19: hay mayor la prevalencia de enfermedades que actúan como factores de riesgo en América Latina. También la desigualdad social aparece como un *factor de riesgo*.
+:::
 
-<!-- -   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad. -->
+::: {.fragment .fade-in}
+-   A su vez, los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor nivel socioeconómico (NSE)
+:::
 
-<!-- ::: -->
+::: notes
+A medida que aumenta la edad, también aumenta la prevalencia de estas enfermedades que actúan como comorbilidades. La presencia de estas enfermedades no necesariamente se relaciona con su estructura por edad, como se mencionó para América Latina. Asimismo, la mayor desigualdad social en la región (LATAM es la región más desigual del mundo), la mayor incidencia de condiciones precarias de vivienda, la falta de protección social, hicieron ver a LATAM como particularmente vulnerable Gestionar la pandemia implica tomar decisiones en base a datos disponibles
+:::
 
-<!-- ::: {.column width="33%"} -->
+## Marco conceptual: desigualdades sociales en salud (1/2)
 
-<!-- Diferenciales sociodemográficos en la mortalidad por COVID-19 -->
+-   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975]
 
-<!-- -   En países desarrollados el NSE se asocia a niveles diferentes de riesgo de contraer COVID-19. Esto no ocurre siempre en LatAm [@lozano2023]. -->
+::: {.fragment .fade-in}
+-   Teoría de las causas fundamentales (TCF) [@link1995]: la posición que ocupan los individuos en la estructura social (asociada a recursos, conocimientos, etc) los pone en *riesgo de riesgos*, por lo que todo factor de riesgo debe ser *contextualizado*. Las *causas fundamentales* persisten como gradientes sociales en la morbimortalidad.
+:::
 
-<!-- -   Los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor NSE. -->
+::: {.fragment .fade-in}
+-   En tanto la CF estratifique la exposición a determinantes de la salud, funciona como un sistema de exposición, atributo de la población, y no del individuo [@riley2020]
+:::
 
-<!-- ::: -->
+::: notes
+Causa fundamentales: estos distintos aspectos de la posición en la estructura social (género, nivel educativo, pertenencia étnica, etc)
+:::
 
-<!-- ::: -->
+## Marco conceptual: desigualdades sociales en salud (2/2)
 
-## Marco conceptual
+::: {.fragment .fade-in}
+-   Como los recursos para afectar la mortalidad están distribuidos desigualmente, mientras más rápido se aborde el tratamiento de una enfermedad, menos tiempo lleva cada etapa de la *historia social* de la enfermedad y más rápidamente se controlan las desigualdades [@clouston2016]
+:::
 
--   Transición demográfica: envejecimiento
+::: {.fragment .fade-in}
+-   @farmer2000 propone una *epistemología crítica* de las enfermedades infecciosas emergentes que incluya evaluar factores estructurales como la pobreza y las desigualdades sociales en la pelea contra las enfermedades infecciosas
+:::
 
--   Transición en salud: América Latina es la región con mayor heterogeneidad en salud y mortalidad. Heterogeneidad a nivel de diferenciales sociales, tales como condiciones de vida, etc.
-
--   Impacto del COVID-19: las diferencias en la prevalencia de enfermedades que actúan como factores de riesgo
-
--   Farmer: reemergencia de enfermedades infecciosas.
-
--   REVISAR QUÉ SACAR DE ANTECEDENTES Y PONER ACÁ
+::: notes
+Clouston menciona que al estudiar una causa en particular, las desigualdades sociales generan un aumento en la brecha de la mortalidad entre los grupos debido a que los recursos para afectar la mortalidad se encuentran distribuidos desigualmente. Farmer dice que además algunas enfermedades ignoran las divisiones políticas, por lo que las estrategias de los países deben ser coordinadas y debe tenerse en cuenta la situación de cada país (menciona, por ejemplo, la deuda que un país tenga con el FMI ya que debe destinar parte de sus recursos limitados al pago de deuda y no a la salud)
+:::
 
 ## Antecedentes
 
@@ -107,7 +166,6 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 **Diferenciales sociodemográficos en la mortalidad**
 
--   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975]
 -   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad.
 
 ### Diferenciales COVID-19
@@ -115,7 +173,6 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 **Diferenciales sociodemográficos en la mortalidad por COVID-19**
 
 -   En países desarrollados el NSE se asocia a niveles diferentes de riesgo de contraer COVID-19. Esto no ocurre siempre en LatAm [@lozano2023].
--   Los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor NSE
 :::
 
 ## Fuentes y métodos
@@ -125,7 +182,7 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 **Fuentes de datos**
 
--   EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS)
+-   EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS): buena cobertura, vemos la calidad.
 
 -   Proyecciones de población [@institutonacionaldeestadísticaycensos2013]
 
@@ -137,9 +194,7 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 
 ### Métodos
 
-**Métodos**
-(incluir ecuaciones)
--   Estandarización de tasas
+**Métodos** (incluir ecuaciones) - Estandarización de tasas
 
 -   Tablas de vida
 
@@ -151,9 +206,7 @@ csl: https://www.zotero.org/styles/apa-old-doi-prefix
 :::
 
 ::: notes
-Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV.
-Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia. 
-Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
+Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia. Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
 :::
 
 ## Resultados (1/x)
@@ -163,38 +216,43 @@ Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y
 ## Resultados (2/x)
 
 ### e~20~ 2020 y 2021
-- Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
-- comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
+
+-   Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
+-   comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
 
 ## Resultados (2/x)
 
 ### Descomposición
-- Rearmar gráficos de grupos veintenales: 20-39, 40-59, 60-79, 80 y más
+
+-   Rearmar gráficos de grupos veintenales: 20-39, 40-59, 60-79, 80 y más
 
 ## Resultados (3/x)
 
 ### Correlaciones lineales
 
 ## Conclusiones (1/x)
-- La pérdida de 𝑒20 entre 2019 y 2020 para el total del país es de 0,79 y 1,28 años para mujeres y varones respectivamente. Para mostrar otros resultados en contexto, estas pérdidas son menores a las experimentadas en el mismo período en la 𝑒15 en varios países (Huang et al., 2023) y en la 𝑒0 en varios países europeos (Aburto et al., 2022). Entre 2019 y 2021, las pérdidas de años de 𝑒20 para el total del país son de 2,75 años para las mujeres y 3,19 años para varones. En este mismo período, los países europeos presentan diferencias en su 𝑒0 que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,58 años (Schöley et al., 2022); en el caso de países de Latinoamérica, varios tienen pérdidas en la 𝑒0 por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años) (Heuveline, 2022).
-- A nivel de las provincias, las diferencias entre 2020 y 2021. En 2021 la e~20~ hubiera sido similar a la observada sin COVID-19 si las tendencias de la mortalidad hubieran permanecido como en la década previa. 
 
+-   La pérdida de 𝑒20 entre 2019 y 2020 para el total del país es de 0,79 y 1,28 años para mujeres y varones respectivamente. Para mostrar otros resultados en contexto, estas pérdidas son menores a las experimentadas en el mismo período en la 𝑒15 en varios países (Huang et al., 2023) y en la 𝑒0 en varios países europeos (Aburto et al., 2022). Entre 2019 y 2021, las pérdidas de años de 𝑒20 para el total del país son de 2,75 años para las mujeres y 3,19 años para varones. En este mismo período, los países europeos presentan diferencias en su 𝑒0 que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,58 años (Schöley et al., 2022); en el caso de países de Latinoamérica, varios tienen pérdidas en la 𝑒0 por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años) (Heuveline, 2022).
+-   A nivel de las provincias, las diferencias entre 2020 y 2021. En 2021 la e~20~ hubiera sido similar a la observada sin COVID-19 si las tendencias de la mortalidad hubieran permanecido como en la década previa.
 
 ## Conclusiones (2/x)
 
 ::: {.fragment .fade-in}
-Causas que tendieron a evitarse
+Causas que tendieron a evitarse: [SIES](https://shiny.indec.gob.ar/sies)
 :::
-
 
 ::: {.fragment .fade-in-then-out}
-![](images/Tasa accidentes.jpg){height="100"}
+![](images/Tasa%20accidentes.jpg){height="100"}
 :::
-
 
 ::: {.fragment .fade-up}
 A ver este otro punto
 :::
+
+## Limitaciones
+
+-   Datos de defunciones: si bien la cobertura es buena, hay aspectos a mejorar en la calidad de la información. Si bien hay estudios de exceso de mortalidad que muestran que éste se explica por el COVID-19, es necesario hacer estudios más detallados que evalúen la calida, muy difíciles de realizar con los datos publicados.
+-   Dado el origen de los datos, resulta imposible poder evaluar el rezago de la inscripción de defunciones, por lo que las defunciones de 2021 pueden estar sobreestimadas en algunas provincias. Es importante profundizar en este aspecto solicitando estos datos a la DEIS.
 
 # ¡Gracias! {style="text-align: center"}
 
