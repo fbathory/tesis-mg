@@ -223,21 +223,27 @@ Es curioso mencionar que, en el caso de la densidad poblacional, la relación no
 
 ### Métodos
 
-**Métodos** (incluir ecuaciones) - Estandarización de tasas
+**Métodos** - Estandarización de tasas: $$
+TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}
+$$
 
 -   Tablas de vida
 
--   Tablas de decrementos múltiples
+-   Tablas de decrementos múltiples: $_nq^i_x = \frac{_nd^i_x}{l_x}$
 
--   Descomposición con el método de @horiuchi2008
+-   Descomposición con el método de @horiuchi2008: $$
+    y_2 - y_1 =\sum_{i = 1}^{n}{c_i} =\int_{x_{i1}}^{x_{i2}}{\frac{\partial y}{\partial x_{i1}}\partial x}
+    $$
 
--   Correlación lineal
+-   Correlación lineal entre la diferencia de e~20~ entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada. Para todos los cálculos, modelos, tablas y gráficos se utilizó el software R con código fuente abierto CRAN y, para las descomposiciones en particular, el paquete DemoDecomp [@riffe2018]
 :::
 
 ::: notes
 EEVV: se utilizan 10 años ya que en estudios anteriores se utilizó este mismo margen debido a ciertas fluctuaciones (como en 2016 en algunas provincias) recientes
 
-Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia. Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
+Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia.
+
+c sub i es el cambio total en y producidos por cambios en la i-ésima covariable x. Entonces c sub i puede ser considerada efecto de x sub i en y. Se trata de un método de general de descomposición. No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
 :::
 
 ## Resultados (1/x)

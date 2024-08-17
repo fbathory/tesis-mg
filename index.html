@@ -567,25 +567,49 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 <div id="tabset-1-1">
 <p><strong>COVID-19: pérdida de esperanza de vida y descomposición</strong></p>
 <ul>
-<li>proyecciones de e<sub>x</sub> según tendencias previas y escenarios contrafácticos</li>
-<li>descomposición de las diferencias de e<sub>x</sub> por edad, sexo y causas. Mayor pérdida en los varones.</li>
+<li>Proyecciones de e<sub>x</sub> (0, 15, 65) según tendencias previas y escenarios contrafácticos sin COVID-19</li>
+<li>Descomposición de las diferencias de e<sub>x</sub> por edad, sexo y causas:
+<ul>
+<li>mayor pérdida en los varones</li>
+<li>el COVID-19 explica la mayor parte de la pérdida de esperanza de vida</li>
 <li>poca contribución de las edades 0-19 en la pérdida de e<sub>0</sub></li>
+</ul></li>
+<li>En Argentina, un primer trabajo proyecta la mortalidad según las tendencias de la década previa para 11 provincias y encuentra diferencias que se atribuyeron a desigualdades estructurales.</li>
 </ul>
 </div>
 <div id="tabset-1-2">
 <p><strong>Diferenciales sociodemográficos en la mortalidad</strong></p>
 <ul>
-<li>Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad.</li>
+<li>Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos:
+<ul>
+<li>En Argentina, un estudio realizado para la provincia de Buenos Aires durante la pandemia de gripe A arroja resultados en ese sentido</li>
+</ul></li>
 </ul>
 </div>
 <div id="tabset-1-3">
 <p><strong>Diferenciales sociodemográficos en la mortalidad por COVID-19</strong></p>
 <ul>
-<li>En países desarrollados el NSE se asocia a niveles diferentes de riesgo de contraer COVID-19. Esto no ocurre siempre en LatAm <span class="citation" data-cites="lozano2023">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Lozano et&nbsp;al., 2023</a>)</span>.</li>
+<li>En países desarrollados, indicadores de condiciones de vida se asocian a niveles diferentes de riesgo de contraer COVID-19.</li>
+<li>Estudios en la región obtienen que el impacto heterogéneo del COVID-19 se relaciona con las desigualdades preexistentes en salud. Sin embargo, no todos encuentran una mayor mortalidad a nivel territorial en lugares menos desarrollados económicamente o con peores indicadores sociales <span class="citation" data-cites="lozano2023">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Lozano et&nbsp;al., 2023</a>)</span>.</li>
+<li>Para Argentina, hay estudios que relacionan el porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI) y densidad poblacional con la mortalidad por COVID-19 (por ejemplo, <span class="citation" data-cites="leveau2022">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Leveau &amp; Bastos, 2022</a>)</span>).</li>
+<li>Otros indicadores que han mostrado asociación con la incidencia y/o la mortalidad por COVID-19: hacinamiento, cobertura de salud, tasas de empleo y desempleo, desigualdad de ingresos, acceso al agua potable, la infraestructura hospitalaria, la densidad poblacional, entre otras</li>
 </ul>
 </div>
 </div>
 </div>
+<aside class="notes">
+<p>Es curioso mencionar que, en el caso de la densidad poblacional, la relación no es clara para todos los países, ya que para algunos refleja la infraestructura hospitalaria, mientras en otros se relaciona con la propagación del virus y la saturación de los sistemas sanitarios.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="fuentes-y-métodos" class="slide level2">
 <h2>Fuentes y métodos</h2>
@@ -595,7 +619,7 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 <div id="tabset-2-1">
 <p><strong>Fuentes de datos</strong></p>
 <ul>
-<li><p>EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS): buena cobertura, vemos la calidad.</p></li>
+<li><p>EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS).</p></li>
 <li><p>Proyecciones de población <span class="citation" data-cites="institutonacionaldeestadísticaycensos2013">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Instituto Nacional de Estadística y Censos, 2013</a>)</span></p></li>
 <li><p>Censos Nacionales de Población, Hogares y Viviendas 2010 y 2022 <span class="citation" data-cites="institutonacionaldeestadísticaycensos2012 institutonacionaldeestadísticaycensos2023">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Instituto Nacional de Estadística y Censos, 2012</a>, <a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">2023</a>)</span></p></li>
 <li><p>Indicadores Básicos 2021 <span class="citation" data-cites="ministeriodesaluddelanación2021">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Ministerio de Salud de la Nación &amp; Organización Panamericana de la Salud, 2021</a>)</span></p></li>
@@ -603,18 +627,24 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 </ul>
 </div>
 <div id="tabset-2-2">
-<p><strong>Métodos</strong> (incluir ecuaciones) - Estandarización de tasas</p>
+<p><strong>Métodos</strong> - Estandarización de tasas: <span class="math display">\[
+TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}
+\]</span></p>
 <ul>
 <li><p>Tablas de vida</p></li>
-<li><p>Tablas de decrementos múltiples</p></li>
-<li><p>Descomposición con el método de <span class="citation" data-cites="horiuchi2008">Horiuchi et&nbsp;al. (<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">2008</a>)</span></p></li>
-<li><p>Correlación lineal</p></li>
+<li><p>Tablas de decrementos múltiples: <span class="math inline">\(_nq^i_x = \frac{_nd^i_x}{l_x}\)</span></p></li>
+<li><p>Descomposición con el método de <span class="citation" data-cites="horiuchi2008">Horiuchi et&nbsp;al. (<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">2008</a>)</span>: <span class="math display">\[
+y_2 - y_1 =\sum_{i = 1}^{n}{c_i} =\int_{x_{i1}}^{x_{i2}}{\frac{\partial y}{\partial x_{i1}}\partial x}
+\]</span></p></li>
+<li><p>Correlación lineal entre la diferencia de e<sub>20</sub> entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada. Para todos los cálculos, modelos, tablas y gráficos se utilizó el software R con código fuente abierto CRAN y, para las descomposiciones en particular, el paquete DemoDecomp <span class="citation" data-cites="riffe2018">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick=""><strong>riffe2018?</strong></a>)</span></p></li>
 </ul>
 </div>
 </div>
 </div>
 <aside class="notes">
-<p>Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (<strong>citar</strong>) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia. Descomposición: No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones</p>
+<p>EEVV: se utilizan 10 años ya que en estudios anteriores se utilizó este mismo margen debido a ciertas fluctuaciones (como en 2016 en algunas provincias) recientes</p>
+<p>Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (<strong>citar</strong>) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia.</p>
+<p>c sub i es el cambio total en y producidos por cambios en la i-ésima covariable x. Entonces c sub i puede ser considerada efecto de x sub i en y. Se trata de un método de general de descomposición. No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -673,9 +703,11 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 <h2>Limitaciones</h2>
 <ul>
 <li>Datos de defunciones: si bien la cobertura es buena, hay aspectos a mejorar en la calidad de la información. Si bien hay estudios de exceso de mortalidad que muestran que éste se explica por el COVID-19, es necesario hacer estudios más detallados que evalúen la calida, muy difíciles de realizar con los datos publicados.</li>
+<li>Asimismo, este trabajo se dedicó a diferenciar entre defunciones COVID-19 vs.&nbsp;no COVID-19 y, por lo tanto, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como ser la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México <span class="citation" data-cites="gonzalez-perez2023">(<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">Gonzalez-Perez &amp; Vega-Lopez, 2023</a>)</span></li>
 <li>Dado el origen de los datos, resulta imposible poder evaluar el rezago de la inscripción de defunciones, por lo que las defunciones de 2021 pueden estar sobreestimadas en algunas provincias. Es importante profundizar en este aspecto solicitando estos datos a la DEIS.</li>
 <li>No hemos dado cuenta de las diferencias en las estrategias de cierres y aperturas en los distintos momentos a distintos niveles territoriales.</li>
-<li>Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados. Sin embargo, eso plantea la dificultad de utilizar medidas robustas como la esperanza de vida debido a los datos disponibles y la dificultad de proyectar a niveles pequeños de desagregación (especialmente tan lejos de las últimas proyecciones)</li>
+<li>Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados. Sin embargo, eso plantea la dificultad de utilizar medidas robustas como la esperanza de vida debido a los datos disponibles y la dificultad de proyectar a niveles pequeños de desagregación (especialmente tan lejos de las últimas proyecciones).</li>
+<li>Este trabajo no capta el efecto de la vacunación a lo largo de 2021. De ello se desprenden posibles líneas de investigación para profundizar en el conocimiento, tanto del desarrollo de la pandemia como del efecto de la vacunación en la mortalidad.</li>
 </ul>
 </section>
 <section>
@@ -714,6 +746,9 @@ Clouston, S. A. P., Rubin, M. S., Phelan, J. C., &amp; Link, B. G. (2016). A Soc
 <div id="ref-farmer2000" class="csl-entry" role="listitem">
 Farmer, P. (2000). Desigualdades sociales y enfermedades infecciosas emergentes. <em>Papeles de población</em>, <em>6</em>(23), 181-201.
 </div>
+<div id="ref-gonzalez-perez2023" class="csl-entry" role="listitem">
+Gonzalez-Perez, G., &amp; Vega-Lopez, M. (2023). Covid-19 and life expectancy in mexico between 2019 and 2021. <em>Population Medicine</em>, <em>5</em>(Supplement). <a href="https://doi.org/10.18332/popmed/163927">https://doi.org/10.18332/popmed/163927</a>
+</div>
 <div id="ref-horiuchi2008" class="csl-entry" role="listitem">
 Horiuchi, S., Wilmoth, J. R., &amp; Pletcher, S. D. (2008). A decomposition method based on a model of continuous change. <em>Demography</em>, <em>45</em>(4), 785-801. <a href="https://doi.org/10.1353/dem.0.0033">https://doi.org/10.1353/dem.0.0033</a>
 </div>
@@ -731,6 +766,9 @@ Instituto Nacional de Estadística y Censos. (2023). <em>Censo Nacional de Pobla
 </div>
 <div id="ref-jackson2017" class="csl-entry" role="listitem">
 Jackson, J. W. (2017). Explaining intersectionality through description, counterfactual thinking, and mediation analysis. <em>Social Psychiatry and Psychiatric Epidemiology</em>, <em>52</em>(7), 785-793. <a href="https://doi.org/10.1007/s00127-017-1390-0">https://doi.org/10.1007/s00127-017-1390-0</a>
+</div>
+<div id="ref-leveau2022" class="csl-entry" role="listitem">
+Leveau, C. M., &amp; Bastos, L. S. (2022). Desigualdades socioespaciales de la mortalidad por COVID-19 en tres olas de propagación: un análisis intraurbano en Argentina. <em>Cadernos de Saúde Pública</em>, <em>38</em>(5), e00163921. <a href="https://doi.org/10.1590/0102-311xes163921">https://doi.org/10.1590/0102-311xes163921</a>
 </div>
 <div id="ref-link1995" class="csl-entry" role="listitem">
 Link, B. G., &amp; Phelan, J. (1995). Social Conditions As Fundamental Causes of Disease. <em>Journal of Health and Social Behavior</em>, <em>35</em>, 80. <a href="https://doi.org/10.2307/2626958">https://doi.org/10.2307/2626958</a>
