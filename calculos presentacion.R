@@ -4,7 +4,14 @@ library(cowplot)
 
 # Resultados e20 para regraficar por sexo
 e20_escenarios_p <- read.xlsx("data/e20 3 escenarios para presentar.xlsx",sep.names = " ")
-
+e20_escenarios_b <- e20_escenarios_p %>% 
+  pivot_longer(cols = 4:9, names_to = "escenario_anio", values_to = "e20") %>% 
+  mutate(Año = case_when(escenario_anio %in% c("e20 observada 2020", "e20 sin COVID 2020", "e20 esperada 2020") ~ "2020",
+                         TRUE                                                                                   ~ "2021"),
+         Escenario = case_when(escenario_anio %in% c("e20 observada 2020", "e20 observada 2021") ~ "observado con COVID-19",
+                               escenario_anio %in% c("e20 sin COVID 2020", "e20 sin COVID 2021") ~ "observado sin COVID-19",
+                               escenario_anio %in% c("e20 esperada 2020","e20 esperada 2021")    ~ "proyectado sin COVID-19")) %>% 
+  pivot_wider(names_from = Sexo, values_from = e20)
 # Tengo que cambiar el año por el sexo para facetear. Tengo que rearmar columnas
 
 # p_e20_2020 <- e20_escenarios %>%
@@ -36,11 +43,98 @@ e20_escenarios_p <- read.xlsx("data/e20 3 escenarios para presentar.xlsx",sep.na
 #        x = "Jurisdicción")+
 #   ylim(50,66)
 
+p_e20_mujeres <- e20_escenarios_b %>%
+  select(1:6) |>
+  mutate(Jurisdicción = case_when(Jurisdicción == "Ciudad Autónoma de Buenos Aires" ~ "CABA",
+                         Jurisdicción == "Tierra del Fuego, Antártida e Islas del Atlántico Sur" ~ "TDF",
+                         Jurisdicción == "Santiago del Estero" ~ "SDE",
+                         Jurisdicción == "Total" ~ "Total del país",
+                         TRUE ~ Jurisdicción)) %>%
+  ggplot(aes(x = reorder(Jurisdicción,-Mujer*(Escenario=="observado con COVID-19" & Año == "2021")))) +
+  geom_rect(xmin=13.5, xmax=14.5, ymin=-Inf, ymax=Inf, fill = "grey", alpha=0.01) +
+  geom_point(aes(y = Mujer, color = Escenario, shape = Escenario), alpha = 0.7, size = 3.5)+
+  theme_bw()+
+  coord_flip()+
+  facet_grid(~Año, scales = "free_x")+
+  theme(panel.background = element_rect(fill = 'white'), # Fondo del panel blanco
+        plot.background = element_rect(fill = 'transparent', color = NA), # Fondo del gráfico transparente
+        legend.background = element_rect(fill = 'transparent'),
+        legend.position = "top",
+        strip.background = element_rect(fill = "white"), # Fondo de las etiquetas de faceta
+        strip.text = element_text(color = "black"), # Texto de las etiquetas de faceta
+        panel.border = element_rect(color = "white"), # Borde del panel
+        legend.title = element_blank(),
+        axis.text.y = element_text(face = c(rep("plain", 13), "bold", rep("plain", 8)), color = "white"),
+        axis.text.x = element_text(color = "white"),
+        axis.title = element_text(color = "white"),
+        axis.ticks = element_line(color = "white"),
+        text = element_text(color = "white"),
+        strip.text.x = element_text(color = "black") )+
+  scale_colour_manual(name = "Escenario",
+                      values = c("#540D6E","#EDAE49","#CE5374")) +
+  scale_shape_manual(name = "Escenario",
+                     values = c(16,17,18))+
+  labs(color = "",
+       y = expression(paste("e" ["20"])),
+       x = "Jurisdicción")+
+  ylim(55,66)
+# panel.background = element_rect(fill='transparent'), #transparent panel bg
+# plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+# panel.grid.major = element_blank(), #remove major gridlines
+# panel.grid.minor = element_blank(), #remove minor gridlines
+# legend.background = element_rect(fill='transparent'), #transparent legend bg
+# legend.box.background = element_rect(fill='transparent') #transparent legend panel
+
+ggsave(plot = p_e20_mujeres, filename = "images/e20mujeres.png", 
+       width = 1300, height = 1000, units = "px", dpi = 180,bg = "transparent")
+
+p_e20_varones <- e20_escenarios_b %>%
+  select(1:5, 7) |>
+  mutate(Jurisdicción = case_when(Jurisdicción == "Ciudad Autónoma de Buenos Aires" ~ "CABA",
+                         Jurisdicción == "Tierra del Fuego, Antártida e Islas del Atlántico Sur" ~ "TDF",
+                         Jurisdicción == "Santiago del Estero" ~ "SDE",
+                         Jurisdicción == "Total" ~ "Total del país",
+                         TRUE ~ Jurisdicción)) %>%
+  ggplot(aes(x = reorder(Jurisdicción,-Varón*(Escenario=="observado con COVID-19" & Año == "2021")))) +
+  geom_rect(xmin=12.5, xmax=13.5, ymin=-Inf, ymax=Inf, fill = "grey", alpha=0.01) +
+  geom_point(aes(y = Varón, color = Escenario, shape = Escenario), alpha = 0.7, size = 3.5)+
+  theme_bw()+
+  coord_flip()+
+  facet_grid(~Año, scales = "free_x")+
+  theme(panel.background = element_rect(fill = 'white'), # Fondo del panel blanco
+        plot.background = element_rect(fill = 'transparent', color = NA), # Fondo del gráfico transparente
+        legend.background = element_rect(fill = 'transparent'),
+        legend.position = "top",
+        strip.background = element_rect(fill = "white"), # Fondo de las etiquetas de faceta
+        strip.text = element_text(color = "black"), # Texto de las etiquetas de faceta
+        panel.border = element_rect(color = "white"), # Borde del panel
+        legend.title = element_blank(),
+        axis.text.y = element_text(face = c(rep("plain", 13), "bold", rep("plain", 8)), color = "white"),
+        axis.text.x = element_text(color = "white"),
+        axis.title = element_text(color = "white"),
+        axis.ticks = element_line(color = "white"),
+        text = element_text(color = "white"),
+        strip.text.x = element_text(color = "black") )+
+  scale_colour_manual(name = "Escenario",
+                      values = c("#540D6E","#EDAE49","#CE5374")) +
+  scale_shape_manual(name = "Escenario",
+                     values = c(16,17,18))+
+  labs(color = "",
+       y = expression(paste("e" ["20"])),
+       x = "Jurisdicción")+
+  ylim(48,61)
+
+ggsave(plot = p_e20_varones, filename = "images/e20varones.png", 
+       width = 1300, height = 1000, units = "px", dpi = 180,bg = "transparent")
+
+# plot_grid(p_e20_mujeres, p_e20_varones, ncol = 2)
+
 geo_total = data.frame(codprov = 0, Jurisdicción="Total") |> 
   mutate(codprov = as.numeric(codprov))
 geo <- e20_escenarios_p[,1:2] %>% 
   rbind(geo_total) |> 
   distinct() 
+
 
 # Resultados descomposición para rearmar gráfico - grupos veintenales
 res_decomp_p <- read.xlsx("data/resultados descomposición base.xlsx")
@@ -62,14 +156,45 @@ p_decomp_pais <- res_decomp_20 |>
   arrange(geo) |>
   pivot_longer(cols = Otras:COVID, names_to = "Causa", values_to = "Valor") |>
   filter(geo %in% c(0)) |>
-  mutate(Jurisdicción = case_when(geo == 2  ~ "CABA",
-                                  geo == 6  ~ "PBA",
-                                  geo == 86 ~ "SDE",
-                                  geo == 94 ~ "TDF",
-                                  geo == 0  ~ "Total del país",
-                                  TRUE      ~ Jurisdicción),
-         Jurisdicción = factor(Jurisdicción,
-                               levels = c("Total del país",
+  mutate(Jurisdicción = "Total del país") |>
+  ggplot(aes(x = x, y = Valor, color = Causa, fill = Causa))+
+  geom_col(aes(alpha = ifelse(Valor > 0, 0.5, 0.9)))+
+  # facet_grid(geo ~ sexo + Causa, scales = "free")
+  facet_grid(sexo ~ Jurisdicción, switch = "y")+
+  theme_bw()+
+  # scale_x_continuous(breaks = c(seq(20,80,10)))+
+  scale_alpha_continuous(guide = FALSE)+
+  scale_fill_manual(name = "Causas", values = c("#EDAE49", "#CE5374"))+
+  scale_color_manual(name = "Causas", values = c("#EDAE49", "#CE5374"))+
+  theme(panel.background = element_rect(fill = 'white'), # Fondo del panel blanco
+        plot.background = element_rect(fill = 'transparent', color = NA), # Fondo del gráfico transparente
+        legend.background = element_rect(fill = 'transparent'),
+        legend.position = "top",
+        strip.background = element_rect(fill = "white"), # Fondo de las etiquetas de faceta
+        strip.text = element_text(color = "black"), # Texto de las etiquetas de faceta
+        panel.border = element_rect(color = "white"), # Borde del panel
+        # legend.title = element_blank(),
+        axis.text.y = element_text(face = c(rep("plain", 13), "bold", rep("plain", 8)), color = "white"),
+        axis.text.x = element_text(color = "white"),
+        axis.title = element_text(color = "white"),
+        axis.ticks = element_line(color = "white"),
+        text = element_text(color = "white"),
+        strip.text.x = element_text(color = "black") 
+        #axis.text.x = element_text(angle = -270, vjust = 0, size = 10)
+        )+
+  labs(x = "Edad",
+       y = expression(paste("Diferencia de e" ["20"], " 2019-2021")))
+
+ggsave(plot = p_decomp_pais, filename = "images/decomp_totalpais.png", 
+       width = 1300, height = 1000, units = "px", dpi = 215,bg = "transparent")
+
+p_decomp_selec <- res_decomp_20 |>
+  left_join(geo, by = c("geo" = "codprov")) |>
+  arrange(geo) |>
+  pivot_longer(cols = Otras:COVID, names_to = "Causa", values_to = "Valor") |>
+  filter(geo %in% c(26,30,38,62,58,34)) |>
+  mutate(Jurisdicción = factor(Jurisdicción,
+                               levels = c("Total",
                                           "CABA",
                                           "PBA",
                                           "Catamarca",
@@ -101,12 +226,29 @@ p_decomp_pais <- res_decomp_20 |>
   theme_bw()+
   # scale_x_continuous(breaks = c(seq(20,80,10)))+
   scale_alpha_continuous(guide = FALSE)+
-  theme(strip.background = element_rect(fill="transparent"),
-        # legend.title   = element_blank(),
+  scale_fill_manual(name = "Causas", values = c("#EDAE49", "#CE5374"))+
+  scale_color_manual(name = "Causas", values = c("#EDAE49", "#CE5374"))+
+  theme(panel.background = element_rect(fill = 'white'), # Fondo del panel blanco
+        plot.background = element_rect(fill = 'transparent', color = NA), # Fondo del gráfico transparente
+        legend.background = element_rect(fill = 'transparent'),
         legend.position = "top",
-        axis.text.x = element_text(angle = -270, vjust = 0, size = 10))+
+        strip.background = element_rect(fill = "white"), # Fondo de las etiquetas de faceta
+        strip.text = element_text(color = "black"), # Texto de las etiquetas de faceta
+        panel.border = element_rect(color = "white"), # Borde del panel
+        # legend.title = element_blank(),
+        axis.text.y = element_text(face = c(rep("plain", 13), "bold", rep("plain", 8)), color = "white"),
+        axis.text.x = element_text(color = "white", angle = 90, vjust = 0, size = 10),
+        axis.title = element_text(color = "white"),
+        axis.ticks = element_line(color = "white"),
+        text = element_text(color = "white"),
+        strip.text.x = element_text(color = "black")#, 
+        # axis.text.x = element_text(angle = 90, vjust = 0, size = 10)
+  )+
   labs(x = "Edad",
        y = expression(paste("Diferencia de e" ["20"], " 2019-2021")))
+
+ggsave(plot = p_decomp_selec, filename = "images/decomp_selec.png", 
+       width = 1600, height = 900, units = "px", dpi = 215,bg = "transparent")
 
 p_decomp1 <- res_decomp_20 |>
   left_join(geo, by = c("geo" = "codprov")) |>

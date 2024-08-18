@@ -15,7 +15,7 @@ format:
     #theme: moon
     self-contained: false
     slide-number: c/t
-    logo: images/logo-unlu2.png
+    logo: images/logo-unlu2-fondo.png
     css: logo.css
     footer: "[https://fbathory.github.io/tesis-mg](https://fbathory.github.io/tesis-mg)"
 bibliography: references.bib
@@ -223,19 +223,15 @@ Es curioso mencionar que, en el caso de la densidad poblacional, la relación no
 
 ### Métodos
 
-**Métodos** - Estandarización de tasas: $$
-TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}
-$$
+- Estandarización de tasas: se utiliza la población de 20 años y más del 2019 del país. $TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}$
 
 -   Tablas de vida
 
 -   Tablas de decrementos múltiples: $_nq^i_x = \frac{_nd^i_x}{l_x}$
 
--   Descomposición con el método de @horiuchi2008: $$
-    y_2 - y_1 =\sum_{i = 1}^{n}{c_i} =\int_{x_{i1}}^{x_{i2}}{\frac{\partial y}{\partial x_{i1}}\partial x}
-    $$
+-   Descomposición con el método de @horiuchi2008: $y_2 - y_1 =\sum_{i = 1}^{n}{c_i} =\int_{x_{i1}}^{x_{i2}}{\frac{\partial y}{\partial x_{i1}}\partial x}$
 
--   Correlación lineal entre la diferencia de e~20~ entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada. Para todos los cálculos, modelos, tablas y gráficos se utilizó el software R con código fuente abierto CRAN y, para las descomposiciones en particular, el paquete DemoDecomp [@riffe2018]
+-   Correlación lineal entre la diferencia de e~20~ entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada.
 :::
 
 ::: notes
@@ -246,26 +242,577 @@ Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la ca
 c sub i es el cambio total en y producidos por cambios en la i-ésima covariable x. Entonces c sub i puede ser considerada efecto de x sub i en y. Se trata de un método de general de descomposición. No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
 :::
 
-## Resultados (1/x)
+## Resultados: TEM
 
-### TEM - total del país y algunas provincias
+```{=html}
+<style>
+table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
 
-## Resultados (2/x)
+table caption {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para la leyenda */
+  text-align: justify;
+  padding: 10px;
+}
 
-### e~20~ 2020 y 2021
+table td, table th {
+  border: 1px solid #ddd; /* Borde ligero para celdas */
+  padding: 8px; /* Espacio interno en las celdas */
+  font-size: 0.8em; /* Tamaño de fuente más pequeño para celdas */
+}
+
+table th {
+  background-color: #f2f2f2; /* Color de fondo para los encabezados */
+  font-weight: bold;
+}
+
+table td {
+  text-align: center; /* Alineación centrada para celdas */
+}
+
+</style>
+
+<table>
+  <caption>TEM (cada mil habitantes) proyectada sin COVID-19 y observada con COVID-19 de la población de 20 años y más por sexo según jurisdicciones seleccionadas. Argentina. Años 2020 y 2021</caption>
+  <tr>
+    <td rowspan="3" style="vertical-align: middle">Jurisdicción</td>
+    <td colspan="6" style="text-align: center">2020</td>
+    <td colspan="6" style="text-align: center">2021</td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align: center">Mujer</td>
+    <td colspan="3" style="text-align: center">Varón</td>
+    <td colspan="3" style="text-align: center">Mujer</td>
+    <td colspan="3" style="text-align: center">Varón</td>
+  </tr>
+  <tr>
+    <td>TEM proy</td>
+    <td>TEM obs</td>
+    <td>&Delta;P-O</td>
+    <td>TEM proy</td>
+    <td>TEM obs</td>
+    <td>&Delta;P-O</td>
+    <td>TEM proy</td>
+    <td>TEM obs</td>
+    <td>&Delta;P-O</td>
+    <td>TEM proy</td>
+    <td>TEM obs</td>
+    <td>&Delta;P-O</td>
+  </tr>
+  <tr>
+    <td>Chaco</td>
+    <td>10,2</td>
+    <td>10,2</td>
+    <td>0,0</td>
+    <td>16,3</td>
+    <td>17,4</td>
+    <td>-1,1</td>
+    <td>10,1</td>
+    <td>13,2</td>
+    <td>-3,1</td>
+    <td>16,2</td>
+    <td>21,2</td>
+    <td>-5,0</td>
+  </tr>
+  <tr>
+    <td>Tucumán</td>
+    <td>9,3</td>
+    <td>10,2</td>
+    <td>-0,9</td>
+    <td>14,2</td>
+    <td>16,4</td>
+    <td>-2,1</td>
+    <td>9,3</td>
+    <td>11,7</td>
+    <td>-2,4</td>
+    <td>14,1</td>
+    <td>17,8</td>
+    <td>-3,7</td>
+  </tr>
+  <tr>
+    <td>Santiago del Estero</td>
+    <td style="vertical-align: middle">9,5</td>
+    <td style="vertical-align: middle">8,8</td>
+    <td style="vertical-align: middle">0,7</td>
+    <td style="vertical-align: middle">14,2</td>
+    <td style="vertical-align: middle">14,1</td>
+    <td style="vertical-align: middle">0,1</td>
+    <td style="vertical-align: middle">9,5</td>
+    <td style="vertical-align: middle">11,7</td>
+    <td style="vertical-align: middle">-2,1</td>
+    <td style="vertical-align: middle">14,1</td>
+    <td style="vertical-align: middle">17,9</td>
+    <td style="vertical-align: middle">-3,8</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Total del país</td>
+    <td style="font-weight: bold; vertical-align: middle">8,8</td>
+    <td style="font-weight: bold; vertical-align: middle">9,4</td>
+    <td style="font-weight: bold; vertical-align: middle">-0,6</td>
+    <td style="font-weight: bold; vertical-align: middle">13,6</td>
+    <td style="font-weight: bold; vertical-align: middle">15,1</td>
+    <td style="font-weight: bold; vertical-align: middle">-1,5</td>
+    <td style="font-weight: bold; vertical-align: middle">8,8</td>
+    <td style="font-weight: bold; vertical-align: middle">10,8</td>
+    <td style="font-weight: bold; vertical-align: middle">-2,0</td>
+    <td style="font-weight: bold; vertical-align: middle">13,4</td>
+    <td style="font-weight: bold; vertical-align: middle">17,0</td>
+    <td style="font-weight: bold; vertical-align: middle">-3,6</td>
+  </tr>
+  <tr>
+    <td>Chubut</td>
+    <td>7,6</td>
+    <td>8,3</td>
+    <td>-0,7</td>
+    <td>12,9</td>
+    <td>14,4</td>
+    <td>-1,5</td>
+    <td>7,5</td>
+    <td>9,5</td>
+    <td>-2,0</td>
+    <td>12,7</td>
+    <td>15,7</td>
+    <td>-3,0</td>
+  </tr>
+  <tr>
+    <td>Tierra del Fuego</td>
+    <td style="vertical-align: middle">7,5</td>
+    <td style="vertical-align: middle">9,5</td>
+    <td style="vertical-align: middle">-2,1</td>
+    <td style="vertical-align: middle">10,7</td>
+    <td style="vertical-align: middle">17,0</td>
+    <td style="vertical-align: middle">-6,3</td>
+    <td style="vertical-align: middle">7,3</td>
+    <td style="vertical-align: middle">9,4</td>
+    <td style="vertical-align: middle">-2,1</td>
+    <td style="vertical-align: middle">10,4</td>
+    <td style="vertical-align: middle">14,3</td>
+    <td style="vertical-align: middle">-3,9</td>
+  </tr>
+  <tr style="border-bottom: 1px solid">
+    <td>CABA</td>
+    <td>8,1</td>
+    <td>9,2</td>
+    <td>-1,1</td>
+    <td>12,2</td>
+    <td>14,8</td>
+    <td>-2,6</td>
+    <td>8,0</td>
+    <td>9,3</td>
+    <td>-1,3</td>
+    <td>12,0</td>
+    <td>15,1</td>
+    <td>-3,1</td>
+  </tr>
+</table>
+```
+## Resultados: e~20~ 2019, 2020 y 2021
+
+```{=html}
+<style>
+table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
+
+table caption {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para la leyenda */
+  text-align: justify;
+  padding: 10px;
+}
+
+table td, table th {
+  border: 1px solid #ddd; /* Borde ligero para celdas */
+  padding: 8px; /* Espacio interno en las celdas */
+  font-size: 0.8em; /* Tamaño de fuente más pequeño para celdas */
+}
+
+table th {
+  background-color: #f2f2f2; /* Color de fondo para los encabezados */
+  font-weight: bold;
+}
+
+table td {
+  text-align: center; /* Alineación centrada para celdas */
+}
+
+</style>
+
+<table>
+  <caption>Esperanza de vida a los 20 años (en años de vida) por sexo, según jurisdicciones seleccionadas. Argentina. Años 2019-2021</caption>
+  <tr>
+    <td rowspan="3" style="vertical-align: middle">Jurisdicción</td>
+    <td colspan="2" style="text-align: center">2019</td>
+    <td colspan="4" style="text-align: center">2020</td>
+    <td colspan="4" style="text-align: center">2021</td>
+  </tr>
+  <tr>
+    <td rowspan="2" style="vertical-align: middle; text-align: center">Mujer</td>
+    <td rowspan="2" style="vertical-align: middle; text-align: center">Varón</td>
+    <td colspan="2" style="text-align: center">Mujer</td>
+    <td colspan="2" style="text-align: center">Varón</td>
+    <td colspan="2" style="text-align: center">Mujer</td>
+    <td colspan="2" style="text-align: center">Varón</td>
+  </tr>
+  <tr>
+    <td>e<sub>20</sub></td>
+    <td>vs. 2019</td>
+    <td>e<sub>20</sub></td>
+    <td>vs. 2019</td>
+    <td>e<sub>20</sub></td>
+    <td>vs. 2019</td>
+    <td>e<sub>20</sub></td>
+    <td>vs. 2019</td>
+  </tr>
+  <tr>
+    <td>Chubut</td>
+    <td>63,7</td>	
+    <td>55,7</td>	
+    <td>61,9</td>	
+    <td>-1,8</td>	
+    <td>54,6</td>	
+    <td>-1,1</td>	
+    <td>60,1</td>	
+    <td>-3,6</td>	
+    <td>53,4</td>	
+    <td>-2,3</td>
+  </tr>
+  <tr>
+    <td>Entre Ríos</td>
+    <td>61,7</td>
+    <td>54,8</td>
+    <td>61,7</td>
+    <td>0,0</td>
+    <td>54,7</td>
+    <td>-0,1</td>
+    <td>59,3</td>
+    <td>-2,4</td>
+    <td>52,5</td>
+    <td>-2,4</td>
+  </tr>
+  <tr>
+    <td>Jujuy</td>
+    <td>61,6</td>
+    <td>55,3</td>
+    <td>58,1</td>
+    <td>-3,5</td>
+    <td>50,1</td>
+    <td>-5,1</td>
+    <td>58,6</td>
+    <td>-2,9</td>
+    <td>52,8</td>
+    <td>-2,4</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Total del país</td>
+    <td style="font-weight: bold; vertical-align: middle">61,1</td>
+    <td style="font-weight: bold; vertical-align: middle">55,2</td>
+    <td style="font-weight: bold; vertical-align: middle">60,3</td>
+    <td style="font-weight: bold; vertical-align: middle">-0,8</td>
+    <td style="font-weight: bold; vertical-align: middle">53,9</td>
+    <td style="font-weight: bold; vertical-align: middle">-1,3</td>
+    <td style="font-weight: bold; vertical-align: middle">58,3</td>
+    <td style="font-weight: bold; vertical-align: middle">-2,8</td>
+    <td style="font-weight: bold; vertical-align: middle">52,0</td>
+    <td style="font-weight: bold; vertical-align: middle">-3,2</td>
+  </tr>
+  <tr>
+    <td>Río Negro</td>
+    <td>62,2</td>
+    <td>56,7</td>
+    <td>60,1</td>
+    <td>-2,1</td>
+    <td>53,9</td>
+    <td>-2,7</td>
+    <td>58,8</td>
+    <td>-3,4</td>
+    <td>52,1</td>
+    <td>-4,6</td>
+  </tr>
+  <tr>
+    <td>Neuquén</td>
+    <td>62,8</td>
+    <td>56,2</td>
+    <td>60,7</td>
+    <td>-2,1</td>
+    <td>54,0</td>
+    <td>-2,3</td>
+    <td>58,9</td>
+    <td>-3,8</td>
+    <td>51,6</td>
+    <td>-4,6</td>
+  </tr>
+  <tr style="border-bottom: 1px solid">
+    <td>Formosa</td>
+    <td>60,0</td>
+    <td>55,1</td>
+    <td>61,9</td>
+    <td>2,0</td>
+    <td>55,7</td>
+    <td>0,6</td>
+    <td>57,5</td>
+    <td>-2,5</td>
+    <td>50,0</td>
+    <td>-5,1</td>
+  </tr>
+</table>
+```
+::: notes
+Hay mayor pérdida en los varones, que parten de e20 más bajas En general la e20 de 2020 es mayor a la de 2019, salvo algunas excepciones. Los varones, partiendo de e20 más bajas, presentan más pérdidas que las mujeres En 2021, la e20 es menor a la de 2019. Implica que incluso en aquellas provincias donde hubo ganancias en 2020 se retrotrajo la e20. A diferencia de 2021, hay provincias en las que las mujeres tuvieron mayores pérdidas que los varones
+:::
+
+## Resultados: e~20~ 2020 y 2021 - Mujeres
+
+::: {.column width="100%"}
+![](images/e20mujeres.png){fig-align="center" width="75%"}
+:::
 
 -   Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
 -   comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
 
-## Resultados (2/x)
+## Resultados: e~20~ 2020 y 2021 - Varones
 
-### Descomposición
+::: {.column width="100%"}
+![](images/e20varones.png){fig-align="center" width="75%"}
+:::
 
--   Rearmar gráficos de grupos veintenales: 20-39, 40-59, 60-79, 80 y más
+## Resultados: Descomposición - Cambios en la e~20~ por causas
 
-## Resultados (3/x)
+```{=html}
+<style>
+table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
 
-### Correlaciones lineales
+table caption {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para la leyenda */
+  text-align: justify;
+  padding: 10px;
+}
+
+table td, table th {
+  border: 1px solid #ddd; /* Borde ligero para celdas */
+  padding: 8px; /* Espacio interno en las celdas */
+  font-size: 0.8em; /* Tamaño de fuente más pequeño para celdas */
+}
+
+table th {
+  background-color: #f2f2f2; /* Color de fondo para los encabezados */
+  font-weight: bold;
+}
+
+table td {
+  text-align: center; /* Alineación centrada para celdas */
+}
+
+</style>
+
+<table>
+  <caption>Cambios de esperanza de vida a los 20 años (en años de vida) de 2019 a 2021, por sexo y causa de defunción, según jurisdicciones seleccionadas. Argentina</caption>
+  <tr>
+    <td rowspan="2" style="vertical-align: middle">Jurisdicción</td>
+    <td colspan="3" style="text-align: center">Mujer</td>
+    <td colspan="3" style="text-align: center">Varón</td>
+  </tr>
+  <tr>
+    <td>COVID-19</td>
+    <td>Otras causas</td>
+    <td>%COVID-19</td>
+    <td>COVID-19</td>
+    <td>Otras causas</td>
+    <td>%COVID-19</td>
+  </tr>
+  <tr>
+    <td>Neuquén</td>
+    <td>-4,390</td>
+    <td>0,549</td>
+    <td>114,3%</td>
+    <td>-5,350</td>
+    <td>0,736</td>
+    <td>116,0%</td>
+  </tr>
+  <tr>
+    <td>Formosa</td>
+    <td>-3,848</td>
+    <td>1,379</td>
+    <td>155,9%</td>
+    <td>-5,015</td>
+    <td>-0,089</td>
+    <td>98,3%</td>
+  </tr>
+  <tr>
+    <td>Río Negro</td>
+    <td>-3,633</td>
+    <td>0,196</td>
+    <td>105,7%</td>
+    <td>-3,963</td>
+    <td>-0,618</td>
+    <td>86,5%</td>
+  </tr>
+  <tr>
+    <td>Chubut</td>
+    <td>-3,423</td>
+    <td>-0,176</td>
+    <td>95,1%</td>
+    <td>-3,367</td>
+    <td>1,086</td>
+    <td>147,6%</td>
+  <tr>
+    <td style="font-weight: bold;">Total del país</td>
+    <td style="font-weight: bold; vertical-align: middle">-2,707</td>
+    <td style="font-weight: bold; vertical-align: middle">-0,041</td>
+    <td style="font-weight: bold; vertical-align: middle">98,5%</td>
+    <td style="font-weight: bold; vertical-align: middle">-3,175</td>
+    <td style="font-weight: bold; vertical-align: middle">-0,011</td>
+    <td style="font-weight: bold; vertical-align: middle">99,7%</td>
+  </tr>
+  <tr>
+    <td>Entre Ríos</td>
+    <td>-2,439</td>
+    <td>6,4%</td>
+    <td>1,027</td>
+    <td>-2,589</td>
+    <td>24,5%</td>
+    <td>1,105</td>
+  </tr>
+  <tr style="border-bottom: 1px solid">
+    <td>Jujuy</td>
+    <td>-2,196</td>
+    <td>-0,736</td>
+    <td>74,9%</td>
+    <td>-2,576</td>
+    <td>0,145</td>
+    <td>106,0%</td>
+  </tr>
+</table>
+```
+
+## Resultados: Descomposición - Total del país
+
+::: {.column width="100%"}
+![](images/decomp_totalpais.png){fig-align="center" width="75%"}
+:::
+
+## Resultados: Descomposición - Provincias seleccionadas
+
+::: {.column width="100%"}
+![](images/decomp_selec.png){fig-align="center" width="100%"}
+:::
+
+## Resultados: correlaciones lineales
+
+```{=html}
+<style>
+table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
+
+table caption {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para la leyenda */
+  text-align: justify;
+  padding: 10px;
+}
+
+table td, table th {
+  border: 1px solid #ddd; /* Borde ligero para celdas */
+  padding: 8px; /* Espacio interno en las celdas */
+  font-size: 0.8em; /* Tamaño de fuente más pequeño para celdas */
+}
+
+table th {
+  background-color: #f2f2f2; /* Color de fondo para los encabezados */
+  font-weight: bold;
+}
+
+table td {
+  text-align: center; /* Alineación centrada para celdas */
+}
+
+</style>
+
+<table>
+  <caption>Coeficiente de determinación (R<sup>2</sup>) de la diferencia de e<sub>20</sub> entre 2019 y 2021 con indicadores seleccionados en las jurisdicciones, por sexo. Argentina.</caption>
+  <tr>
+    <td rowspan="2" style="vertical-align: middle">Indicador</td>
+    <td colspan="2" style="text-align: center">Mujeres</td>
+    <td colspan="2" style="text-align: center">Varones</td>
+  </tr>
+  <tr>
+    <td style="text-align: center">R<sup>2</sup> (%)</td>
+    <td style="text-align: center">&beta;</td>
+    <td style="text-align: center">R<sup>2</sup> (%)</td>
+    <td style="text-align: center">&beta;</td>
+  </tr>
+  <tr>
+    <td>Densidad de población (ln)</td>
+    <td style="vertical-align: middle">41,0%</td>
+    <td style="vertical-align: middle">-0,25</td>
+    <td style="vertical-align: middle">12,4%</td>
+    <td style="vertical-align: middle">-0,15</td>
+  </tr>
+  <tr>
+    <td>Porcentaje de hogares sin agua proveniente de red pública dentro de la vivienda (NBI 2)</td>
+    <td style="vertical-align: middle">0,0%</td>
+    <td style="vertical-align: middle">0,00</td>
+    <td style="vertical-align: middle">9,1%</td>
+    <td style="vertical-align: middle">0,03</td>
+  </tr>
+  <tr>
+    <td>Porcentaje de población de 25 años y más con al menos secundario completo</td>
+    <td style="vertical-align: middle">1,8%</td>
+    <td style="vertical-align: middle">-0,01</td>
+    <td style="vertical-align: middle">5,4%</td>
+    <td style="vertical-align: middle">-0,02</td>
+  </tr>
+  <tr>
+    <td>Porcentaje de hogares con más de 3 personas por cuarto de uso exclusivo del hogar (NBI 3)</td>
+    <td style="vertical-align: middle">0,8%</td>
+    <td style="vertical-align: middle">-0,03</td>
+    <td style="vertical-align: middle">3,5%</td>
+    <td style="vertical-align: middle">0,07</td>
+  </tr>
+  <tr>
+    <td>Tasa de mortalidad infantil</td>
+    <td style="vertical-align: middle">0,5%</td>
+    <td style="vertical-align: middle">-0,02</td>
+    <td style="vertical-align: middle">2,5%</td>
+    <td style="vertical-align: middle">0,06</td>
+  </tr>
+  <tr>
+    <td>Camas hospitalarias cada 10.000 habitantes (ln)</td>
+    <td style="vertical-align: middle">5,9%</td>
+    <td style="vertical-align: middle">-0,70</td>
+    <td style="vertical-align: middle">2,0%</td>
+    <td style="vertical-align: middle">-0,45</td>
+  </tr>
+  <tr>
+    <td>Porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI)</td>
+    <td style="vertical-align: middle">0,7%</td>
+    <td style="vertical-align: middle">-0,01</td>
+    <td style="vertical-align: middle">1,7%</td>
+    <td style="vertical-align: middle">0,02</td>
+
+  </tr>
+  <tr>
+    <td>Porcentaje de informalidad laboral asalariada</td>
+    <td style="vertical-align: middle">0,0%</td>
+    <td style="vertical-align: middle">0,00</td>
+    <td style="vertical-align: middle">0,2%</td>
+    <td style="vertical-align: middle">0,00</td>
+  </tr>
+  <tr style="border-bottom: 1px solid">
+    <td>Coeficiente de Gini de la distribución del IPCF</td>
+    <td style="vertical-align: middle">0,5%</td>
+    <td style="vertical-align: middle">-1,67</td>
+    <td style="vertical-align: middle">0,0%</td>
+    <td style="vertical-align: middle">0,22</td>
+  </tr>
+</table>
+```
 
 ## Conclusiones (1/x)
 
@@ -279,7 +826,7 @@ Causas que tendieron a evitarse: [SIES](https://shiny.indec.gob.ar/sies)
 :::
 
 ::: {.fragment .fade-in-then-out}
-![](images/Tasa%20accidentes.jpg){height="100"}
+![](images/Tasa accidentes.jpg){height="100"}
 :::
 
 ::: {.fragment .fade-up}
