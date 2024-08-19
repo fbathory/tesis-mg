@@ -85,15 +85,11 @@ El desarrollo histórico argentino genera diferencias entre las regiones: se ref
 
 -   La transición demográfica argentina presenta una trayectoria "atípica" en relación a los lineamientos clásicos del modelo.
 
-::: {.fragment .fade-in}
+::: incremental
 -   Actualmente, Argentina se encuentra en una etapa avanzada de la transición. El porcentaje de personas de 65 años y más es de 11,8% según datos del CNPHV 2022 .
-:::
 
-::: {.fragment .fade-in}
 -   América Latina es la región con mayor heterogeneidad en salud y mortalidad. Hay superposición de etapas, "contratransición" y estancamiento. Las desigualdades sociales exacerban las desigualdades en salud y se produce una "polarización epidemiológica".
-:::
 
-::: {.fragment .fade-in}
 -   Argentina tiene los primeros cambios en el perfil epidemiológico en la década de 1930. Para 1950, Argentina ha cubierto buena parte del proceso de transición epidemiológica. Sin embargo, el desarrollo de las provincias es heterogéneo y la salud y la mortalidad se encuentran distribuidas desigualmente
 :::
 
@@ -109,11 +105,9 @@ En década de 1930 la mortalidad por enfermedades transmisibles desciende más r
 
 -   Inicialmente, se hace énfasis en la mayor mortalidad masculina del COVID-19, especialmente entre las personas mayores y aquellas con enfermedades preexistentes
 
-::: {.fragment .fade-in}
+::: incremental
 -   Impacto del COVID-19: hay mayor la prevalencia de enfermedades que actúan como factores de riesgo en América Latina. También la desigualdad social aparece como un *factor de riesgo*.
-:::
 
-::: {.fragment .fade-in}
 -   A su vez, los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor nivel socioeconómico (NSE)
 :::
 
@@ -123,13 +117,11 @@ A medida que aumenta la edad, también aumenta la prevalencia de estas enfermeda
 
 ## Marco conceptual: desigualdades sociales en salud (1/2)
 
--   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975]
+-   Los factores exógenos al nivel de ingreso de un país son responsables de las ganancias en e~0~ [@preston1975]. @grushka2014 encontró una relación análoga para la Argentina y sus provincias.
 
-::: {.fragment .fade-in}
+::: incremental
 -   Teoría de las causas fundamentales (TCF) [@link1995]: la posición que ocupan los individuos en la estructura social (asociada a recursos, conocimientos, etc.) los pone en *riesgo de riesgos*, por lo que todo factor de riesgo debe ser *contextualizado*. Las *causas fundamentales* persisten como gradientes sociales en la morbimortalidad.
-:::
 
-::: {.fragment .fade-in}
 -   En tanto la CF estratifique la exposición a determinantes de la salud, funciona como un sistema de exposición, atributo de la población, y no del individuo [@riley2020]
 :::
 
@@ -141,7 +133,7 @@ Causa fundamentales: estos distintos aspectos de la posición en la estructura s
 
 -   Como los recursos para afectar la mortalidad están distribuidos desigualmente, mientras más rápido se aborde el tratamiento de una enfermedad, menos tiempo lleva cada etapa de la *historia social* de la enfermedad y más rápidamente se controlan las desigualdades [@clouston2016]
 
-::: {.fragment .fade-in}
+::: incremental
 -   @farmer2000 propone una *epistemología crítica* de las enfermedades infecciosas emergentes que incluya evaluar factores estructurales como la pobreza y las desigualdades sociales en la pelea contra las enfermedades infecciosas
 :::
 
@@ -153,15 +145,11 @@ Clouston menciona que al estudiar una causa en particular, las desigualdades soc
 
 -   Como la vida social no transcurre en el vacío sino en un lugar y momento determinados, la estructura social se refleja en el territorio, en tanto espacio donde la vida social ocurre [@jackson2017].
 
-::: {.fragment .fade-in}
+::: incremental
 -   La dinámica en el territorio es, en parte, resultado del desarrollo geográfico histórico desigual. Por lo tanto, condensa en un momento la distribución y asignación desigual de recursos (entonces, de ventajas y desventajas) producto de esa dinámica.
-:::
 
-::: {.fragment .fade-in}
 -   Los hábitos y las trayectorias de los grupos poblacionales que habitan el territorio inciden y son a su vez modificadas por las condiciones dadas en un momento y lugar del territorio. Por lo tanto, las desigualdades **se organizan espacialmente** y convergen en patrones espaciales de desigualdad en fenómenos como la salud y la mortalidad
-:::
 
-::: {.fragment .fade-in}
 -   Estas desigualdades territoriales adquieren especial relevancia en momentos de crisis y catástrofes porque impactan más fuertemente en los sectores desfavorecidos.
 :::
 
@@ -190,14 +178,14 @@ El territorio tiene su dinámica plagada de acción y relaciones sociales entre 
 -   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos:
     -   En Argentina, un estudio realizado para la provincia de Buenos Aires durante la pandemia de gripe A arroja resultados en ese sentido
 
-### Diferenciales COVID-19
+### Diferenciales COVID-19 {.smaller}
 
 **Diferenciales sociodemográficos en la mortalidad por COVID-19**
 
 -   En países desarrollados, indicadores de condiciones de vida se asocian a niveles diferentes de riesgo de contraer COVID-19.
--   Estudios en la región obtienen que el impacto heterogéneo del COVID-19 se relaciona con las desigualdades preexistentes en salud. Sin embargo, no todos encuentran una mayor mortalidad a nivel territorial en lugares menos desarrollados económicamente o con peores indicadores sociales [@lozano2023].
--   Para Argentina, hay estudios que relacionan el porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI) y densidad poblacional con la mortalidad por COVID-19 (por ejemplo, [@leveau2022]).
--   Otros indicadores que han mostrado asociación con la incidencia y/o la mortalidad por COVID-19: hacinamiento, cobertura de salud, tasas de empleo y desempleo, desigualdad de ingresos, acceso al agua potable, la infraestructura hospitalaria, la densidad poblacional, entre otras
+-   En la región estudios indican que el impacto heterogéneo del COVID-19 se relaciona con desigualdades preexistentes en salud. Pero no todos encuentran mayor mortalidad en lugares con peores indicadores sociales [@lozano2023].
+-   En Argentina, estudios relacionan el porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI) y densidad poblacional con la mortalidad por COVID-19 (e.g. [@leveau2022]).
+-   Otros indicadores muestran asociación con incidencia y/o mortalidad por COVID-19: hacinamiento, cobertura de salud, tasas de empleo y desempleo, desigualdad de ingresos, acceso al agua potable, la infraestructura hospitalaria, la densidad poblacional, entre otras
 :::
 
 ::: notes
@@ -223,7 +211,7 @@ Es curioso mencionar que, en el caso de la densidad poblacional, la relación no
 
 ### Métodos
 
-- Estandarización de tasas: se utiliza la población de 20 años y más del 2019 del país. $TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}$
+-   Estandarización de tasas: se utiliza la población de 20 años y más del 2019 del país. $TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}$
 
 -   Tablas de vida
 
@@ -689,7 +677,6 @@ table td {
   </tr>
 </table>
 ```
-
 ## Resultados: Descomposición - Total del país
 
 ::: {.column width="100%"}
@@ -720,7 +707,7 @@ table caption {
 table td, table th {
   border: 1px solid #ddd; /* Borde ligero para celdas */
   padding: 8px; /* Espacio interno en las celdas */
-  font-size: 0.8em; /* Tamaño de fuente más pequeño para celdas */
+  font-size: 0.7em; /* Tamaño de fuente más pequeño para celdas */
 }
 
 table th {
@@ -746,6 +733,13 @@ table td {
     <td style="text-align: center">&beta;</td>
     <td style="text-align: center">R<sup>2</sup> (%)</td>
     <td style="text-align: center">&beta;</td>
+  </tr>
+  <tr>
+    <td>Valor agregado bruto (VAB) per cápita (ln)*</td>
+    <td style="vertical-align: middle">8,8%</td>
+    <td style="vertical-align: middle">0,40</td>
+    <td style="vertical-align: middle">0,1%</td>
+    <td style="vertical-align: middle">-0,05</td>
   </tr>
   <tr>
     <td>Densidad de población (ln)</td>
@@ -813,24 +807,83 @@ table td {
   </tr>
 </table>
 ```
-
 ## Conclusiones (1/x)
 
--   La pérdida de 𝑒20 entre 2019 y 2020 para el total del país es de 0,79 y 1,28 años para mujeres y varones respectivamente. Para mostrar otros resultados en contexto, estas pérdidas son menores a las experimentadas en el mismo período en la 𝑒15 en varios países (Huang et al., 2023) y en la 𝑒0 en varios países europeos (Aburto et al., 2022). Entre 2019 y 2021, las pérdidas de años de 𝑒20 para el total del país son de 2,75 años para las mujeres y 3,19 años para varones. En este mismo período, los países europeos presentan diferencias en su 𝑒0 que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,58 años (Schöley et al., 2022); en el caso de países de Latinoamérica, varios tienen pérdidas en la 𝑒0 por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años) (Heuveline, 2022).
--   A nivel de las provincias, las diferencias entre 2020 y 2021. En 2021 la e~20~ hubiera sido similar a la observada sin COVID-19 si las tendencias de la mortalidad hubieran permanecido como en la década previa.
+::: incremental
+-   La pérdida de e20 entre 2019 y 2020 para el total del país es de 0,79 y 1,28 años para mujeres y varones respectivamente:
+
+    -   Estas pérdidas son menores a las experimentadas en el mismo período en la e~15~ en varios países [@huang2023] y en la e~0~ en países europeos [@aburto2022].
+
+-   Entre **2019** y **2021**, las pérdidas de años de e~20~ para el total del país son de 2,75 años para las mujeres y 3,19 años para varones:
+
+    -   En este mismo período, los países europeos presentan diferencias en su e~20~ que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,58 años [@schöley2022]; en países de la región, varios tienen pérdidas en la e~0~ por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años)[@heuveline2022].
+:::
 
 ## Conclusiones (2/x)
 
-::: {.fragment .fade-in}
-Causas que tendieron a evitarse: [SIES](https://shiny.indec.gob.ar/sies)
+::: columns
+::: {.column width="70%"}
+::: {.fragment fragment-index="1"}
+A nivel de las provincias, hay diferencias entre 2020 y 2021.
 :::
 
-::: {.fragment .fade-in-then-out}
-![](images/Tasa accidentes.jpg){height="100"}
+::: {.fragment fragment-index="1"}
+En 2020, algunas provincias muestran pérdidas importantes en la e~20~, mientras otras muestran un efecto "protector" de la pandemia (una e~20~ observada con COVID-19 mayor a la proyectada sin COVID-19).
 :::
 
-::: {.fragment .fade-up}
-A ver este otro punto
+::: {.fragment fragment-index="2"}
+-   Este efecto se podría adjudicar a las medidas de aislamiento y distanciamiento, más estrictas y duraderas en 2020, que evitan algunas de las defunciones proyectadas (o "esperadas"), como los accidentes de tránsito.
+:::
+
+::: {.fragment fragment-index="3"}
+-   Los varones, partiendo de e~20~ más bajas, presentan mayores que las mujeres. En términos relativos, la pérdida es ligeramente mayor (5% vs 6%).
+:::
+:::
+
+::: {.column width="30%"}
+![INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies](images/Tasa%20accidentes.jpg){.lightbox .fragment fragment-index="2" width="600"} 
+![Ministerio de Salud, Dirección de Estadística e Información en Salud. Obtenido de: https://www.argentina.gob.ar/salud/deis/reporte-interactivo](images/TMAPE%20accidentes.png){.lightbox .fragment fragment-index="2" width="600"}
+:::
+:::
+
+## Conclusiones (3/x)
+
+En 2021 la e~20~ observada es, en todos los casos, menor a la proyectada sin COVID-19.
+
+::: {.fragment fragment-index="2"}
+-   La e~20~ observada sin COVID-19 es, en general, muy cercana a la e~20~ proyectada con COVID-19. Esto implica que:
+    -   la pérdida de e~20~ se explica por el COVID-19
+    -   posiblemente, el COVID-19 no *compite* con la distribución de otras causas de muerte, por lo que genera un exceso de mortalidad atribuible solo a dicha causa.
+    -   esto ya lo habían verificado @rearte2021 para el total del país en 2020, aunque no para las provincias.
+
+:::
+
+::: columns
+::: {.column width="70%"}
+::: {.fragment fragment-index="3"}
+-   En algunas provincias, las mujeres perdieron más e~20~ que los varones en 2021. Puede deberse al retorno a actividades presenciales en 2021.
+:::
+:::
+
+::: {.column width="30%"}
+::: {.fragment fragment-index="3"}
+![INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies](images/desocupación.png "INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies"){.lightbox fig-alt="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies" width="60%"}
+:::
+:::
+:::
+
+## Conclusiones (4/x)
+
+El COVID-19 explica prácticamente la totalidad de pérdida de e~20~, tanto en varones como en mujeres (98,5% y 99,7 respectivamente):
+
+::: incremental
+-   Se observaron pérdidas importantes desde los 40 años para ambos sexos, en el total del país y en las provincias.
+
+-   El 72% de la pérdida de e~20~ de las mujeres ocurre entre las edades 45 a 79. Para los varones, es el 85%.
+
+-   En algunas provincias, las pérdidas son mayores en el grupo 40-59, pero generalmente las mayores pérdidas ocurren en el grupo 60-79.
+
+-   En las causas no-COVID-19, el panorama es heterogéneo: en algunas la pérdida se atenúa ligeramente, en otras se suma a las pérdidas por COVID-19
 :::
 
 ## Limitaciones
