@@ -109,7 +109,7 @@ p_e20_varones <- e20_escenarios_b %>%
         strip.text = element_text(color = "black"), # Texto de las etiquetas de faceta
         panel.border = element_rect(color = "white"), # Borde del panel
         legend.title = element_blank(),
-        axis.text.y = element_text(face = c(rep("plain", 13), "bold", rep("plain", 8)), color = "white"),
+        axis.text.y = element_text(face = c(rep("plain", 12), "bold", rep("plain", 8)), color = "white"),
         axis.text.x = element_text(color = "white"),
         axis.title = element_text(color = "white"),
         axis.ticks = element_line(color = "white"),
