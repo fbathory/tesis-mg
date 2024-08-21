@@ -938,11 +938,11 @@ La densidad poblacional presenta relación inversa. A un nivel como el provincia
 
 Los hallazgos de este trabajo deben tomarse en un cariz descriptivo.
 
--   Si bien la cobertura de las EEVV en Argentina es buena, hay aspectos a mejorar en la calidad de la información. Este trabajo solo se dedicó a diferenciar entre defunciones COVID-19 vs. no COVID-19 y, entonces, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México [@gonzalez-perez2023]
+-   Este trabajo solo diferenció entre defunciones COVID-19 vs. no COVID-19 y no da cuenta de la incidencia de defunciones por causas relacionadas estrechamente al COVID que podrían estar ocultando una pérdida mayor [@gonzalez-perez2023]
 
 -   Con los datos disponibles no es posible evaluar el rezago de la inscripción de defunciones. Es importante profundizar con estos datos o realizar estimaciones alternativas (por ejemplo, e~20~ 2020-2021).
 
--   No hemos dado cuenta de las diferencias en las estrategias de cierres y aperturas en los distintos momentos a distintos niveles territoriales.
+-   No se da cuenta de las diferencias en las estrategias de cierres y aperturas a distintos niveles territoriales.
 
 -   Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados.
 
