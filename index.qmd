@@ -245,7 +245,7 @@ Este trabajo se propone:
 
 #### Observado sin COVID-19
 
--   Se elaboran 100 tablas de vida de decrementos múltiples para obtener una e~20~ quitando el efecto de las defunciones por COVID-19, a partir de la probabilidad de muerte $_nq^{-i}_x$ , siendo $-i$ todas las causas no-COVID.
+-   Se elaboran 100 tablas de vida de decrementos múltiples a partir de la probabilidad de muerte $_nq^{-i}_x$ , siendo $-i$ todas las causas no-COVID.
 
 #### Proyectado sin COVID-19
 
