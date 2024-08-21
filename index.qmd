@@ -233,13 +233,13 @@ Este trabajo se propone:
 
 -   Estandarización de tasas: se utiliza la población de 20 años y más del 2019 del país. $TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}$
 
--   Tablas de vida de decrementos simples: $e_{20} = \frac{_\omega T_{20}}{l_{20}}$
+-   Tablas de vida de decrementos únicos: $e_{20} = \frac{_\omega T_{20}}{l_{20}}$
 
 -   Tablas de vida de decrementos múltiples: $_nq^i_x = \frac{_nd^i_x}{l_x}$
 
 -   Descomposición con el método de @horiuchi2008: $y_2 - y_1 =\sum_{i = 1}^{n}{c_i} =\int_{x_{i1}}^{x_{i2}}{\frac{\partial y}{\partial x_{i1}}\partial x}$
 
--   Correlación lineal entre la diferencia de e~20~ entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada.
+-   Correlación lineal entre la diferencia de e~20~ entre 2019-2021 e indicadores sociodemográficos seleccionados en base a la bibliografía relevada.
 
 ### Contrafácticos
 
@@ -253,7 +253,7 @@ Este trabajo se propone:
 
 -   Se utilizan las proyecciones de población para 2020 y 2021 como denominadores para las tasas centrales de mortalidad $_nm_x$
 
--   Se elaboran 100 tablas de vida de decrementos simples para obtener la e~20~ proyectada sin COVID-19 para 2020 y 2021 según las tendencias de la década anterior
+-   Se elaboran 100 tablas de vida de decrementos únicos para obtener la e~20~ proyectada sin COVID-19 para 2020 y 2021 según las tendencias de la década anterior
 :::
 
 ::: notes
@@ -593,13 +593,15 @@ Hay mayor pérdida en los varones, que parten de e20 más bajas En general la e2
 ![](images/e20mujeres.png){.lightbox fig-align="center" width="75%"}
 :::
 
--   Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
--   comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
-
 ## Resultados: e~20~ 2020 y 2021 - Varones
 
 ::: {.column width="100%"}
 ![](images/e20varones.png){.lightbox fig-align="center" width="75%"}
+:::
+
+::: notes
+-   Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
+-   comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
 :::
 
 ## Resultados: Descomposición - Cambios en la e~20~ por causas
@@ -936,7 +938,7 @@ La densidad poblacional presenta relación inversa. A un nivel como el provincia
 
 Los hallazgos de este trabajo deben tomarse en un cariz descriptivo.
 
--   Datos de defunciones: si bien la cobertura de las EEVV en Argentina es buena, hay aspectos a mejorar en la calidad de la información. Este trabajo solo se dedicó a diferenciar entre defunciones COVID-19 vs. no COVID-19 y, por lo tanto, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México [@gonzalez-perez2023]
+-   Si bien la cobertura de las EEVV en Argentina es buena, hay aspectos a mejorar en la calidad de la información. Este trabajo solo se dedicó a diferenciar entre defunciones COVID-19 vs. no COVID-19 y, entonces, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México [@gonzalez-perez2023]
 
 -   Con los datos disponibles no es posible evaluar el rezago de la inscripción de defunciones. Es importante profundizar con estos datos o realizar estimaciones alternativas (por ejemplo, e~20~ 2020-2021).
 
@@ -957,7 +959,6 @@ Sin embargo, eso plantea la dificultad de utilizar medidas robustas como la espe
 📧 [florencia.bathory\@gmail.com](mailto:florencia.bathory@gmail.com)
 
 ::: notes
-Agradecer primero a los jurados, luego a la gente de la Maestría, luego a mi familia, amigxs, compas de trabajo, a Matías, y por último a mi director
 :::
 
 ## Referencias bibliográficas
