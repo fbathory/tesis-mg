@@ -448,7 +448,7 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 </ul>
 <div>
 <ul>
-<li class="fragment"><p>Impacto del COVID-19: hay mayor la prevalencia de enfermedades que actúan como factores de riesgo en América Latina. También la desigualdad social aparece como un <em>factor de riesgo</em>.</p></li>
+<li class="fragment"><p>En América Latina hay mayor la prevalencia de enfermedades que actúan como factores de riesgo. También la desigualdad social aparece como un <em>factor de riesgo</em>.</p></li>
 <li class="fragment"><p>A su vez, los factores de riesgo (obesidad, tabaquismo) son más frecuentes a menor nivel socioeconómico (NSE)</p></li>
 </ul>
 </div>
@@ -617,8 +617,8 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 <div id="tabset-2-2">
 <ul>
 <li><p>Estandarización de tasas: se utiliza la población de 20 años y más del 2019 del país. <span class="math inline">\(TEM_i = \frac{\sum{_nm_x^i*_nP_x^S}}{\sum {_nP_x^S}}\)</span></p></li>
-<li><p>Tablas de vida de decrementos múltiples: <span class="math inline">\(e_{20} = \frac{_\omega T_{20}}{l_{20}}\)</span></p></li>
-<li><p>Tablas de vida de decrementos simples: <span class="math inline">\(_nq^i_x = \frac{_nd^i_x}{l_x}\)</span></p></li>
+<li><p>Tablas de vida de decrementos simples: <span class="math inline">\(e_{20} = \frac{_\omega T_{20}}{l_{20}}\)</span></p></li>
+<li><p>Tablas de vida de decrementos múltiples: <span class="math inline">\(_nq^i_x = \frac{_nd^i_x}{l_x}\)</span></p></li>
 <li><p>Descomposición con el método de <span class="citation" data-cites="horiuchi2008">Horiuchi et&nbsp;al. (<a href="#/referencias-bibliográficas" role="doc-biblioref" onclick="">2008</a>)</span>: <span class="math inline">\(y_2 - y_1 =\sum_{i = 1}^{n}{c_i} =\int_{x_{i1}}^{x_{i2}}{\frac{\partial y}{\partial x_{i1}}\partial x}\)</span></p></li>
 <li><p>Correlación lineal entre la diferencia de e<sub>20</sub> entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada.</p></li>
 </ul>
@@ -626,7 +626,7 @@ María Florencia Bathory<br>Director: Dr.&nbsp;Octavio Bramajo<br>Universidad de
 <div id="tabset-2-3">
 <h4 id="observado-sin-covid-19">Observado sin COVID-19</h4>
 <ul>
-<li>Se elaboran 100 tablas de vida de decrementos múltiples para obtener una e<sub>20</sub> quitando el efecto de las defunciones por COVID-19</li>
+<li>Se elaboran 100 tablas de vida de decrementos múltiples para obtener una e<sub>20</sub> quitando el efecto de las defunciones por COVID-19, a partir de la probabilidad de muerte <span class="math inline">\(_nq^{-i}_x\)</span> , siendo <span class="math inline">\(-i\)</span> todas las causas no-COVID.</li>
 </ul>
 <h4 id="proyectado-sin-covid-19">Proyectado sin COVID-19</h4>
 <ul>
@@ -1338,7 +1338,7 @@ table.tabla-cor td {
 <div class="fragment" data-fragment-index="3">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/desocupación.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5" title="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies"><img data-src="images/desocupación.png" title="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies" style="width:60.0%" alt="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies"></a></p>
+<p><a href="images/desocupación.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies"><img data-src="images/desocupación.png" title="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies" style="width:60.0%" alt="INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies"></a></p>
 <figcaption>INDEC, Sistema Integrado de Estadísticas Sociales. Obtenido de: https://shiny.indec.gob.ar/sies</figcaption>
 </figure>
 </div>
@@ -1889,7 +1889,7 @@ Schöley, J., Aburto, J. M., Kashnitsky, I., Kniffka, M. S., Zhang, L., Jaadla, 
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false,"selector":".lightbox"});
+    <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom"});
     window.onload = () => {
       lightboxQuarto.on('slide_before_load', (data) => {
         const { slideIndex, slideNode, slideConfig, player, trigger } = data;
