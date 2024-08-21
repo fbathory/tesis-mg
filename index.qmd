@@ -83,7 +83,6 @@ El desarrollo histórico argentino genera diferencias entre las regiones: se ref
 -   Cuantificar el impacto diferencial del COVID-19 por grupos de edad y sexo en las provincias.
 
 -   Identificar el impacto de la estructura socioespacial en los cambios de la mortalidad durante la pandemia de COVID-19 entre 2019 y 2021.
-
 :::
 
 ## Marco conceptual: transiciones demográfica y epidemiológica
@@ -178,17 +177,19 @@ El territorio tiene su dinámica plagada de acción y relaciones sociales entre 
     -   poca contribución de las edades 0-19 en la pérdida de e~0~
 -   En Argentina, un primer trabajo proyecta la mortalidad según las tendencias de la década previa para 11 provincias y encuentra diferencias que podrían asociarse a desigualdades estructurales [@pou2022].
 
-### Diferenciales **QUITAR**
+<!-- ### Diferenciales **QUITAR** -->
 
-**Diferenciales sociodemográficos en la mortalidad**
+<!-- **Diferenciales sociodemográficos en la mortalidad** -->
 
--   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos:
-    -   En Argentina, un estudio realizado para la provincia de Buenos Aires durante la pandemia de gripe A arroja resultados en ese sentido **CITAR**
+<!-- -   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos: -->
+
+<!--     -   En Argentina, un estudio realizado para la provincia de Buenos Aires durante la pandemia de gripe A arroja resultados en ese sentido **CITAR** -->
 
 ### Diferenciales COVID-19 {.smaller}
 
 **Diferenciales sociodemográficos en la mortalidad por COVID-19**
 
+-   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos
 -   En países desarrollados, indicadores de condiciones de vida se asocian a niveles diferentes de riesgo de contraer COVID-19.
 -   En la región estudios indican que el impacto heterogéneo del COVID-19 se relaciona con desigualdades preexistentes en salud. Pero no todos encuentran mayor mortalidad en lugares con peores indicadores sociales [@lozano2023].
 -   En Argentina, estudios relacionan el porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI) y densidad poblacional con la mortalidad por COVID-19 (e.g. @leveau2022).
@@ -197,15 +198,13 @@ El territorio tiene su dinámica plagada de acción y relaciones sociales entre 
 
 ::: notes
 Es curioso mencionar que, en el caso de la densidad poblacional, la relación no es clara para todos los países, ya que para algunos refleja la infraestructura hospitalaria, mientras en otros se relaciona con la propagación del virus y la saturación de los sistemas sanitarios.
-
-**RECORDAR OBJETIVOS**
 :::
 
 ## Vacancia
 
 Este trabajo se propone:
 
--   analizar las pérdidas de vida para la población adulta, en primer lugar considerando la baja mortalidad por COVID-19 en las edades más jóvenes (Atamari-Anahui et al., 2020); en segundo lugar, tomando todas las provincias; y, en tercer lugar, con un período de estudio que abarca 2020 y 2021, algo que no se ha realizado hasta ahora
+-   analizar las pérdidas e~20~ de vida para la población adulta, en primer lugar considerando la baja mortalidad por COVID-19 en las edades más jóvenes (Atamari-Anahui et al., 2020); en segundo lugar, tomando todas las provincias; y, en tercer lugar, con un período de estudio que abarca 2020 y 2021, algo que no se ha realizado hasta ahora
 
 -   cuantificar el impacto de la pandemia por grupos de edad y sexo
 
@@ -221,6 +220,8 @@ Este trabajo se propone:
 -   EEVV 2010-2021 de la Dirección de Estadísticas e Información en Salud (DEIS).
 
 -   Proyecciones de población [@institutonacionaldeestadísticaycensos2013]
+
+-   Desagregación provincial del valor agregado bruto de la Argentina, base 2004 [@equipodetrabajodelacepal2022]
 
 -   Censos Nacionales de Población, Hogares y Viviendas 2010 y 2022 [@institutonacionaldeestadísticaycensos2012; @institutonacionaldeestadísticaycensos2023]
 
@@ -241,18 +242,18 @@ Este trabajo se propone:
 -   Correlación lineal entre la diferencia de e~20~ entre 2019-2021 e indicadores sociodemogáficos seleccionados en base a la bibliografía relevada.
 
 ### Contrafácticos
+
 #### Observado sin COVID-19
 
-- Se elaboran 100 tablas de vida de decrementos múltiples para obtener una e~20~ quitando el efecto de las defunciones por COVID-19
-
+-   Se elaboran 100 tablas de vida de decrementos múltiples para obtener una e~20~ quitando el efecto de las defunciones por COVID-19
 
 #### Proyectado sin COVID-19
-- A partir de las defunciones 2010-2019, se realizan 650 modelos lineales estratificados por sexo, grupo de edad y provincia para obtener defunciones proyectadas en 2020 y 2021. $y = \alpha + \beta x$
 
-- Se utilizan las proyecciones de población para 2020 y 2021 como denominadores para las tasas centrales de mortalidad $_nm_x$
+-   A partir de las defunciones 2010-2019, se realizan 650 modelos lineales estratificados por sexo, grupo de edad y provincia para obtener defunciones proyectadas en 2020 y 2021. $y = \alpha + \beta x$
 
-- Se elaboran 100 tablas de vida de decrementos simples para obtener la e~20~ proyectada sin COVID-19 para 2020 y 2021 según las tendencias de la década anterior
+-   Se utilizan las proyecciones de población para 2020 y 2021 como denominadores para las tasas centrales de mortalidad $_nm_x$
 
+-   Se elaboran 100 tablas de vida de decrementos simples para obtener la e~20~ proyectada sin COVID-19 para 2020 y 2021 según las tendencias de la década anterior
 :::
 
 ::: notes
@@ -260,44 +261,44 @@ EEVV: se utilizan 10 años ya que en estudios anteriores se utilizó este mismo 
 
 Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia.
 
-tablas de vida: explicar brevemente que de allí se obtiene la esperanza de vida al nacer, pero también se puede obtener la esperanza de vida en otras edades, como en este caso la de 20. Se optó por esa edad dado que se había relevado la poca incidencia de la mortalidad por covid entre menores de 20 y, asimismo, en ese grupo de edad hay fenómenos de la mortalidad particulares que podían haber afectado si buscábamos obtener la e~0~ . Se opto entonces por hacer foco en la mortalidad adulta
+tablas de vida: explicar brevemente que de allí se obtiene la esperanza de vida al nacer, pero también se puede obtener la esperanza de vida en otras edades, como en este caso la de 20. Se optó por esa edad dado que se había relevado la poca incidencia de la mortalidad por covid entre menores de 20 y, asimismo, históricamente los avances en la e~0~ se dieron entre los más jóvenes, por lo que se podría haber "ensuciado" la pérdida por COVID. En ese grupo de edad, además, hay fenómenos de la mortalidad particulares que podían haber afectado si buscábamos obtener la e~0~ . Se opto entonces por hacer foco en la mortalidad adulta
 
 c sub i es el cambio total en y producidos por cambios en la i-ésima covariable x. Entonces c sub i puede ser considerada efecto de x sub i en y. Se trata de un método de general de descomposición. No sabíamos cuántas causas íbamos a utilizar en principio, y Arriaga funciona mejor al momento de buscar las contribuciones de la estructura de la población y no necesariamente de las causas. Por ello, la relación entre la estructura de las causas en Arriaga tiene que ser lineal, lo cual no necesariamente ocurre en este caso, dado que además las provincias tienen diferencias importantes en las estructuras de sus poblaciones
 :::
 
-## Resultados: TEM **REVISAR TAMAÑO**
+## Resultados: TEM
 
 ```{=html}
 <style>
-table {
+table.tabla-tem {
   width: 100%; /* Ancho de la tabla al 100% del contenedor */
   border-collapse: collapse; /* Colapsa los bordes de las celdas */
 }
 
-table caption {
+table.tabla-tem caption {
   font-size: 0.9em; /* Tamaño de fuente más pequeño para la leyenda */
   text-align: justify;
   padding: 10px;
 }
 
-table td, table th {
+table.tabla-tem td, table.tabla-tem th {
   border: 1px solid #ddd; /* Borde ligero para celdas */
-  padding: 8px; /* Espacio interno en las celdas */
-  font-size: 1em; /* Tamaño de fuente más pequeño para celdas */
+  padding: 5px !important; /* Espacio interno en las celdas */
+  font-size: 0.85em !important; /* Tamaño de fuente ajustado para celdas con !important */
 }
 
-table th {
+table.tabla-tem th {
   background-color: #f2f2f2; /* Color de fondo para los encabezados */
   font-weight: bold;
 }
 
-table td {
+table.tabla-tem td {
   text-align: center; /* Alineación centrada para celdas */
 }
-
 </style>
 
-<table>
+
+<table class="tabla-tem">
   <caption>TEM (cada mil habitantes) proyectada sin COVID-19 y observada con COVID-19 de la población de 20 años y más por sexo según jurisdicciones seleccionadas. Argentina. Años 2020 y 2021</caption>
   <tr>
     <td rowspan="3" style="vertical-align: middle">Jurisdicción</td>
@@ -601,7 +602,7 @@ Hay mayor pérdida en los varones, que parten de e20 más bajas En general la e2
 ![](images/e20varones.png){.lightbox fig-align="center" width="75%"}
 :::
 
-## Resultados: Descomposición - Cambios en la e~20~ por causas *IR A UN DECIMAL*
+## Resultados: Descomposición - Cambios en la e~20~ por causas
 
 ```{=html}
 <style>
@@ -619,7 +620,7 @@ table caption {
 table td, table th {
   border: 1px solid #ddd; /* Borde ligero para celdas */
   padding: 8px; /* Espacio interno en las celdas */
-  font-size: 0.8em; /* Tamaño de fuente más pequeño para celdas */
+  font-size: 0.9em !important; /* Tamaño de fuente ajustado para celdas con !important */
 }
 
 table th {
@@ -630,8 +631,8 @@ table th {
 table td {
   text-align: center; /* Alineación centrada para celdas */
 }
-
 </style>
+
 
 <table>
   <caption>Cambios de esperanza de vida a los 20 años (en años de vida) de 2019 a 2021, por sexo y causa de defunción, según jurisdicciones seleccionadas. Argentina</caption>
@@ -650,64 +651,64 @@ table td {
   </tr>
   <tr>
     <td>Neuquén</td>
-    <td>-4,390</td>
-    <td>0,549</td>
+    <td>-4,4</td>
+    <td>0,6</td>
     <td>114,3%</td>
-    <td>-5,350</td>
-    <td>0,736</td>
+    <td>-5,4</td>
+    <td>0,7</td>
     <td>116,0%</td>
   </tr>
   <tr>
     <td>Formosa</td>
-    <td>-3,848</td>
-    <td>1,379</td>
+    <td>-3,9</td>
+    <td>1,4</td>
     <td>155,9%</td>
-    <td>-5,015</td>
-    <td>-0,089</td>
+    <td>-5,0</td>
+    <td>-0,1</td>
     <td>98,3%</td>
   </tr>
   <tr>
     <td>Río Negro</td>
-    <td>-3,633</td>
-    <td>0,196</td>
+    <td>-3,6</td>
+    <td>0,2</td>
     <td>105,7%</td>
-    <td>-3,963</td>
-    <td>-0,618</td>
+    <td>-4,0</td>
+    <td>-0,6</td>
     <td>86,5%</td>
   </tr>
   <tr>
     <td>Chubut</td>
-    <td>-3,423</td>
-    <td>-0,176</td>
+    <td>-3,4</td>
+    <td>-0,2</td>
     <td>95,1%</td>
-    <td>-3,367</td>
-    <td>1,086</td>
+    <td>-3,4</td>
+    <td>1,1</td>
     <td>147,6%</td>
   <tr>
     <td style="font-weight: bold;">Total del país</td>
-    <td style="font-weight: bold; vertical-align: middle">-2,707</td>
-    <td style="font-weight: bold; vertical-align: middle">-0,041</td>
+    <td style="font-weight: bold; vertical-align: middle">-2,7</td>
+    <td style="font-weight: bold; vertical-align: middle">0,0</td>
     <td style="font-weight: bold; vertical-align: middle">98,5%</td>
-    <td style="font-weight: bold; vertical-align: middle">-3,175</td>
-    <td style="font-weight: bold; vertical-align: middle">-0,011</td>
+    <td style="font-weight: bold; vertical-align: middle">-3,2</td>
+    <td style="font-weight: bold; vertical-align: middle">0,0</td>
     <td style="font-weight: bold; vertical-align: middle">99,7%</td>
   </tr>
   <tr>
     <td>Entre Ríos</td>
-    <td>-2,439</td>
-    <td>6,4%</td>
-    <td>1,027</td>
-    <td>-2,589</td>
-    <td>24,5%</td>
-    <td>1,105</td>
+    <td>-2,5</td>
+    <td>0,1</td>
+    <td>102,7%</td>
+    <td>-2,6</td>
+    <td>0,3</td>
+    <td>110,5%</td>
   </tr>
   <tr style="border-bottom: 1px solid">
     <td>Jujuy</td>
-    <td>-2,196</td>
-    <td>-0,736</td>
+    <td>-2,2</td>
+    <td>-0,7</td>
     <td>74,9%</td>
-    <td>-2,576</td>
-    <td>0,145</td>
+    <td>-2,6</td>
+    <td>0,2</td>
     <td>106,0%</td>
   </tr>
 </table>
@@ -732,35 +733,35 @@ En general, el aporte de los grupos entre los 40 y los 79 años para las mujeres
 
 ```{=html}
 <style>
-table {
+table.tabla-cor {
   width: 100%; /* Ancho de la tabla al 100% del contenedor */
   border-collapse: collapse; /* Colapsa los bordes de las celdas */
 }
 
-table caption {
+table.tabla-cor caption {
   font-size: 0.9em; /* Tamaño de fuente más pequeño para la leyenda */
   text-align: justify;
   padding: 10px;
 }
 
-table td, table th {
+table.tabla-cor td, table.tabla-cor th {
   border: 1px solid #ddd; /* Borde ligero para celdas */
   padding: 8px; /* Espacio interno en las celdas */
-  font-size: 0.7em; /* Tamaño de fuente más pequeño para celdas */
+  font-size: 0.7em !important; /* Tamaño de fuente más pequeño para celdas */
 }
 
-table th {
+table.tabla-cor th {
   background-color: #f2f2f2; /* Color de fondo para los encabezados */
   font-weight: bold;
 }
 
-table td {
-  text-align: center; /* Alineación centrada para celdas */
+table.tabla-cor td {
+  text-align: left; /* Alineación centrada para celdas */
 }
 
 </style>
 
-<table>
+<table class="tabla-cor">
   <caption>Coeficiente de determinación (R<sup>2</sup>) de la diferencia de e<sub>20</sub> entre 2019 y 2021 con indicadores seleccionados en las jurisdicciones, por sexo. Argentina.</caption>
   <tr>
     <td rowspan="2" style="vertical-align: middle">Indicador</td>
@@ -846,7 +847,7 @@ table td {
   </tr>
 </table>
 ```
-## Conclusiones (1/x)
+## Conclusiones (1/4)
 
 ::: incremental
 -   La pérdida de e~20~ entre 2019 y 2020 para el total del país es de 0,8 y 1,3 años para mujeres y varones respectivamente:
@@ -855,10 +856,10 @@ table td {
 
 -   Entre **2019** y **2021**, las pérdidas de años de e~20~ para el total del país son de 2,8 años para las mujeres y 3,2 años para varones:
 
-    -   En este mismo período, los países europeos presentan diferencias en su e~20~ que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,6 años [@schöley2022]; en países de la región, varios tienen pérdidas en la e~0~ por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años)[@heuveline2022].
+    -   En este mismo período, los países europeos presentan diferencias en su e~0~ que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,6 años [@schöley2022]; en países de la región, varios tienen pérdidas en la e~0~ por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años)[@heuveline2022].
 :::
 
-## Conclusiones (2/x)
+## Conclusiones (2/4)
 
 ::: columns
 ::: {.column width="70%"}
@@ -884,12 +885,12 @@ En 2020, algunas provincias muestran pérdidas importantes en la e~20~, mientras
 :::
 :::
 
-## Conclusiones (3/x)
+## Conclusiones (3/4)
 
 En 2021 la e~20~ observada es, en todos los casos, menor a la proyectada sin COVID-19.
 
 ::: {.fragment fragment-index="2"}
--   La e~20~ observada sin COVID-19 es, en general, muy cercana a la e~20~ proyectada con COVID-19. Esto implica que:
+-   La e~20~ observada sin COVID-19 es, en general, muy cercana a la e~20~ proyectada sin COVID-19. Esto implica que:
     -   la pérdida de e~20~ se explicaría mayormente por el COVID-19
     -   posiblemente, el COVID-19 no *compite* con la distribución de otras causas de muerte, por lo que genera un exceso de mortalidad atribuible solo a dicha causa.
     -   esto ya lo habían verificado @rearte2021 para el total del país en 2020, aunque no para las provincias.
@@ -909,16 +910,16 @@ En 2021 la e~20~ observada es, en todos los casos, menor a la proyectada sin COV
 :::
 :::
 
-## Conclusiones (4/x)
+## Conclusiones (4/4)
 
-El COVID-19 explica prácticamente la totalidad de pérdida de e~20~, tanto en mujeres como en varones (98,5% y 99,7% respectivamente):
+Al descomponer, el COVID-19 explica prácticamente la totalidad de pérdida de e~20~, tanto en mujeres como en varones (98,5% y 99,7% respectivamente):
 
 ::: incremental
 -   Se observan pérdidas importantes desde los 40 años para ambos sexos, en el total del país y en las provincias.
 
 -   El 77% de la pérdida de e~20~ de las mujeres ocurre entre las edades 40 a 79. Para los varones, es el 85%.
 
--   En algunas provincias, las pérdidas son mayores en el grupo 40-59, pero generalmente las mayores pérdidas ocurren en el grupo 60-79.
+-   En algunas provincias, las pérdidas son mayores en el grupo 40-59, pero generalmente la pérdida ocurre en el grupo 60-79.
 
 -   En las causas no-COVID-19, el panorama es heterogéneo: en algunas provincias la pérdida se atenúa ligeramente, en otras se suma a las pérdidas por COVID-19
 :::
@@ -935,15 +936,21 @@ La densidad poblacional presenta relación inversa. A un nivel como el provincia
 
 Los hallazgos de este trabajo deben tomarse en un cariz descriptivo.
 
--   Datos de defunciones: si bien la cobertura de las EEVV en Argentina es buena, hay aspectos a mejorar en la calidad de la información. Este trabajo se dedicó a diferenciar entre defunciones COVID-19 vs. no COVID-19 y, por lo tanto, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México [@gonzalez-perez2023]
+-   Datos de defunciones: si bien la cobertura de las EEVV en Argentina es buena, hay aspectos a mejorar en la calidad de la información. Este trabajo solo se dedicó a diferenciar entre defunciones COVID-19 vs. no COVID-19 y, por lo tanto, no da cuenta de la incidencia de defunciones por causas relacionadas muy cercanamente al COVID y que podrían estar ocultando una pérdida mayor, como la diabetes miellitus y la enfermedad isquémica del corazón, tal como ocurrió en México [@gonzalez-perez2023]
 
--   Con los datos disponibles no es posible evaluar el rezago de la inscripción de defunciones. Es importante profundizar en este aspecto solicitando estos datos a la DEIS a los fines de no sobreestimar las defunciones en algunas provincias o realizando estimaciones alternativas (por ejemplo, e~20~ 2020-2021).
+-   Con los datos disponibles no es posible evaluar el rezago de la inscripción de defunciones. Es importante profundizar con estos datos o realizar estimaciones alternativas (por ejemplo, e~20~ 2020-2021).
 
 -   No hemos dado cuenta de las diferencias en las estrategias de cierres y aperturas en los distintos momentos a distintos niveles territoriales.
 
--   Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados. Sin embargo, eso plantea la dificultad de utilizar medidas robustas como la esperanza de vida debido a los datos disponibles y la dificultad de proyectar a niveles pequeños de desagregación (especialmente tan lejos de las últimas proyecciones).
+-   Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados.
 
 -   Este trabajo no capta el efecto de la vacunación a lo largo de 2021. De ello se desprenden posibles líneas de investigación para profundizar en el conocimiento, tanto del desarrollo de la pandemia como del efecto de la vacunación en la mortalidad.
+
+::: notes
+rezago: Solicitar a la DEIS a los fines de no sobreestimar las defunciones en algunas provincias
+
+Sin embargo, eso plantea la dificultad de utilizar medidas robustas como la esperanza de vida debido a los datos disponibles y la dificultad de proyectar a niveles pequeños de desagregación (especialmente tan lejos de las últimas proyecciones).
+:::
 
 # ¡Gracias! {style="text-align: center"}
 
