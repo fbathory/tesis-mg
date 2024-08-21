@@ -365,3 +365,82 @@ p_decomp_prov <- cowplot::plot_grid(p_decomp1, p_decomp2, nrow = 2, align = "v",
 # p_decomp_prov <- cowplot::add_sub(p_decomp_prov, expression(paste("Diferencia de e" ["20"], " 2019-2021")), -0.02, 1.8, 
 #                                   angle = 90)
 # cowplot::ggdraw(p_decomp_prov)
+
+pob_def <- openxlsx::read.xlsx("C:/Users/Usuario/Desktop/Calculos tesis/Export/base_defunciones_pob.xlsx")
+source("C:/Users/Usuario/Desktop/Calculos tesis/LT20.R")
+
+pob_20 <- pob_def %>% 
+  filter(anio == 2019) %>% 
+  ungroup() %>% 
+  group_by(codgeo, geo, edad5) %>% 
+  summarise(n = sum(n),
+            def = sum(def),
+            tasa_def = def/n) %>% 
+  mutate(edadx = as.numeric(substr(edad5, start = 2, stop = 3)))
+
+x <- c(seq(from = 20, to = 80, by = 5))
+
+for (p in unique(pob_def$codgeo)){
+    
+    prov <- pob_20 |>  filter(codgeo == p)
+      
+      lt_data <- prov %>% ungroup()
+      
+      # lt_base <- LifeTable(x = x,
+      #     mx = lt_data$tasa_def,
+      #     sex = ifelse(unique(lt_data$sexo) == "Mujer", "female", "male"))
+      
+      lt <- lifetable20(deaths = lt_data$def,
+                        pop    = lt_data$n, 
+                        Age    = lt_data$edadx) |> 
+        mutate(geo = p)
+      
+      
+      #con esto las creo en el environment
+      assign(paste0("lt_2019", "_", p, "_"),
+             lt,
+             envir = .GlobalEnv)
+      
+      # assign(paste0("nMx_", a, "_", p, "_", s),
+      #      geo %>% ungroup() |>  filter (sexo == s),
+      #      envir = .GlobalEnv)
+      
+      }
+nombres <- ls(pattern = "lt_20")
+
+# Armo lista con todas las LT observadas
+lst <- mget(nombres)
+
+obtener_valor_y_nombre <- function(df, nombre) {
+  valor <- df[1, 11]  
+  df_resultado <- data.frame(NombreDataFrame = nombre, Valor = valor)
+  return(df_resultado)
+}
+e20_list <- lapply(seq_along(lst), function(i) {
+  obtener_valor_y_nombre(lst[[i]], nombres[i])
+})
+
+e20 <- do.call(rbind, e20_list) |> 
+  mutate(#extraigo año de NombreDataFrame
+    anio    = substr(NombreDataFrame, start = 4, stop = 7),
+    
+    #extraigo código de provincia
+    codprov = substr(NombreDataFrame, start = 9, stop = 10),
+    
+    # transformo el código para CABA y PBA
+    codprov = case_when(codprov == "2_" ~ "2",
+                        codprov == "6_" ~ "6",
+                        codprov == "0_" ~ "0",
+                        TRUE            ~ codprov),
+    #transformo codprov a numérico
+    codprov = as.numeric(codprov)) |> 
+  select(-NombreDataFrame) |> 
+  pivot_wider(names_from = anio, values_from = Valor,names_prefix = "obs_") |> 
+  
+  #incorporo nombre de provincia
+  left_join(geo,
+            by = "codprov") |>
+  relocate(Jurisdicción, .after = codprov) |>
+  arrange(codprov)
+
+openxlsx::write.xlsx(e20,"data/e20_2019.xlsx")
