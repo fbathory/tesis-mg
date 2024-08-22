@@ -599,11 +599,6 @@ Hay mayor pérdida en los varones, que parten de e20 más bajas En general la e2
 ![](images/e20varones.png){.lightbox fig-align="center" width="75%"}
 :::
 
-::: notes
--   Mostrar de la tabla 6 algunos highlights (por ej las que no perdieron en 2020)
--   comparación mujer 2020-2021 y varón 2020-2021 (rearmar gráfico)
-:::
-
 ## Resultados: Descomposición - Cambios en la e~20~ por causas
 
 ```{=html}
@@ -728,7 +723,7 @@ table td {
 :::
 
 ::: notes
-En general, el aporte de los grupos entre los 40 y los 79 años para las mujeres es del 74% de la pérdida, mientras que el grupo de edad más bajo (20-39) aporta no más del 11%. En el caso de los varones, el aporte del grupo de 40 a 79 años es, en promedio, de 83%, y el grupo de hasta 40 años no aporta más del 13%. Esto implica que, en el caso de las mujeres, el aporte de las más añosas es mayor (en primer lugar, debido a que... hay), y el aporte del grupo más joven es ligeramente más alto entre los varones
+En general, el aporte de los grupos entre los 40 y los 79 años para las mujeres es del 74% de la pérdida, mientras que el grupo de edad más bajo (20-39) aporta no más del 11%. En el caso de los varones, el aporte del grupo de 40 a 79 años es, en promedio, de 83%, y el grupo de hasta 40 años no aporta más del 13%. Comportamiento heterogéneo de las otras causas
 :::
 
 ## Resultados: correlaciones lineales
@@ -931,7 +926,11 @@ Al descomponer, el COVID-19 explica prácticamente la totalidad de pérdida de e
 En el análisis territorial, no se halla una correlación entre los indicadores seleccionados y la pérdida de e~20~, salvo en el caso de la densidad poblacional.
 
 ::: notes
+
+la falta de correlación podría deberse a distintos factores, muy difíciles de medir, tales como la eficacia de las medidas de aislamiento y prevención de los contagios en distintos niveles (hasta individuales, como en las fábricas), pero también las medidas de asistencia y la vacunación centralizada basada en criterios de riesgo (edad, comorbilidades, etc). Algunos de estos aspectos son difíciles (o imposibles) de cuantificar con los datos disponibles 
+
 La densidad poblacional presenta relación inversa. A un nivel como el provincial, puede que la densidad poblacional funciones como proxy de infraestructura general urbana. Relaciones similares se hallaron para Estados Unidos y Francia
+
 :::
 
 ## Limitaciones y perspectivas futuras
