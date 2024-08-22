@@ -256,7 +256,7 @@ Este trabajo se propone:
 :::
 
 ::: notes
-EEVV: se utilizan 10 años ya que en estudios anteriores se utilizó este mismo margen debido a ciertas fluctuaciones (como en 2016 en algunas provincias) recientes
+EEVV: COVID por testeo y por historia, se utilizan 10 años ya que en estudios anteriores se utilizó este mismo margen debido a ciertas fluctuaciones (como en 2016 en algunas provincias) recientes
 
 Datos: BUSCAR CÓMO SE ATRIBUYÓ CAUSA COVID-19 A LA MUERTE. Y respecto de la calidad, Argentina no presenta problemas de cobertura aún en momentos de COVID-19 (**citar**) y respecto de la calidad de la CBD, optamos por usar COVID vs No COVID. Asimismo, hay trabajos (citar el de Vizzotti) que mostraron que las defunciones por COVID-19 explicaban el exceso de mortalidad obtenido a partir de las EEVV. Modelos de muertes: se proyectaron defunciones y los modelos están estratificados por sexo, edad y provincia.
 
