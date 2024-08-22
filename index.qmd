@@ -846,13 +846,13 @@ table.tabla-cor td {
 ## Conclusiones (1/4)
 
 ::: incremental
--   La pérdida de e~20~ entre 2019 y 2020 para el total del país es de 0,8 y 1,3 años para mujeres y varones respectivamente:
+-   La pérdida de e~20~ entre **2019** y **2020** para el total del país es de 0,8 y 1,3 años para mujeres y varones respectivamente:
 
     -   Estas pérdidas son menores a las experimentadas en el mismo período en la e~15~ en varios países [@huang2023] y en la e~0~ en países europeos [@aburto2022].
 
 -   Entre **2019** y **2021**, las pérdidas de años de e~20~ para el total del país son de 2,8 años para las mujeres y 3,2 años para varones:
 
-    -   En este mismo período, los países europeos presentan diferencias en su e~0~ que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,6 años [@schöley2022]; en países de la región, varios tienen pérdidas en la e~0~ por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años)[@heuveline2022].
+    -   En este mismo período, los países europeos presentan diferencias en su e~0~ que oscilaron entre ganancias de 0,1 años y pérdidas de hasta 3,6 años [@schöley2022]; en países de la región, varios tienen pérdidas en la e~0~ por encima de 4 años: México (4 años), Bolivia (4,1 años), Paraguay (4,7 años), Guatemala (4,8 años) y Perú (5,6 años) [@heuveline2022].
 :::
 
 ## Conclusiones (2/4)
@@ -936,6 +936,8 @@ La densidad poblacional presenta relación inversa. A un nivel como el provincia
 
 Los hallazgos de este trabajo deben tomarse en un cariz descriptivo.
 
+::: incremental
+
 -   Este trabajo solo diferenció entre defunciones COVID-19 vs. no COVID-19 y no da cuenta de la incidencia de defunciones por causas relacionadas estrechamente al COVID que podrían estar ocultando una pérdida mayor [@gonzalez-perez2023]
 
 -   Con los datos disponibles no es posible evaluar el rezago de la inscripción de defunciones. Es importante profundizar con estos datos o realizar estimaciones alternativas (por ejemplo, e~20~ 2020-2021).
@@ -945,6 +947,8 @@ Los hallazgos de este trabajo deben tomarse en un cariz descriptivo.
 -   Las desigualdades socioespaciales habitualmente suelen medirse a niveles más desagregados.
 
 -   Este trabajo no capta el efecto de la vacunación a lo largo de 2021. De ello se desprenden posibles líneas de investigación para profundizar en el conocimiento, tanto del desarrollo de la pandemia como del efecto de la vacunación en la mortalidad.
+
+:::
 
 ::: notes
 rezago: Solicitar a la DEIS a los fines de no sobreestimar las defunciones en algunas provincias
