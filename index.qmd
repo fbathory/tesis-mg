@@ -189,11 +189,10 @@ El territorio tiene su dinámica plagada de acción y relaciones sociales entre 
 
 **Diferenciales sociodemográficos en la mortalidad por COVID-19**
 
--   Mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad en la gran mayoría de los casos
--   En países desarrollados, indicadores de condiciones de vida se asocian a niveles diferentes de riesgo de contraer COVID-19.
--   En la región estudios indican que el impacto heterogéneo del COVID-19 se relaciona con desigualdades preexistentes en salud. Pero no todos encuentran mayor mortalidad en lugares con peores indicadores sociales [@lozano2023].
+-   En general, mejores condiciones de vida se asocian a una situación más ventajosa respecto de la mortalidad.
+-   En países desarrollados, indicadores de condiciones de vida se asocian a niveles diferentes de riesgo de contraer COVID-19. En la región, no siempre se encuentran mayor mortalidad en zonas con peores indicadores sociales [@lozano2023].
 -   En Argentina, estudios relacionan el porcentaje de hogares con Necesidades Básicas Insatisfechas (NBI) y densidad poblacional con la mortalidad por COVID-19 (e.g. @leveau2022).
--   Otros indicadores muestran asociación con incidencia y/o mortalidad por COVID-19: hacinamiento, cobertura de salud, tasas de empleo y desempleo, desigualdad de ingresos, acceso al agua potable, la infraestructura hospitalaria, la densidad poblacional, entre otras
+-   Otros indicadores asociados a incidencia y/o mortalidad por COVID-19: hacinamiento, cobertura de salud, tasas de empleo y desempleo, desigualdad de ingresos, acceso al agua potable, la infraestructura hospitalaria, la densidad poblacional, entre otras
 :::
 
 ::: notes
