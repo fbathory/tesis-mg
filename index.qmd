@@ -915,7 +915,7 @@ Al descomponer, el COVID-19 explica prácticamente la totalidad de pérdida de e
 
 -   El 77% de la pérdida de e~20~ de las mujeres ocurre entre las edades 40 a 79. Para los varones, es el 85%.
 
--   En algunas provincias, las pérdidas son mayores en el grupo 40-59, pero generalmente la pérdida ocurre en el grupo 60-79.
+-   En algunas provincias, las pérdidas son mayores en el grupo 40-59, pero generalmente la mayor pérdida ocurre en el grupo 60-79.
 
 -   En las causas no-COVID-19, el panorama es heterogéneo: en algunas provincias la pérdida se atenúa ligeramente, en otras se suma a las pérdidas por COVID-19
 :::
